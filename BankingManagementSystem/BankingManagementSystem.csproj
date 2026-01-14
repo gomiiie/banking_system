@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegChoose.Designer.cs">
+      <DependentUpon>RegChoose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration1.Designer.cs">
+      <DependentUpon>Registration1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,8 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegChoose.resx">
+      <DependentUpon>RegChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration1.resx">
+      <DependentUpon>Registration1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
@@ -80,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -93,6 +115,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\6122582.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\6122582%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dell-logo-vector-download-11574216103ng3d4rrcip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dell-logo-vector-download-11574216103ng3d4rrcip-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\attachment_97757090__1_-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

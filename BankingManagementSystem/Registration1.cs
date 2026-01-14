@@ -10,20 +10,23 @@ using System.Windows.Forms;
 
 namespace BankingManagementSystem
 {
-    public partial class Welcome : Form
+    public partial class Registration1 : Form
     {
-        public Welcome()
+        public Registration1()
         {
             InitializeComponent();
         }
 
-        private void btnEnter_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            //Registration1 loginForm = new Registration1();
-            Login loginForm = new Login();
-            loginForm.Show();
-            this.Hide();
 
+        }
+
+        private void btnBack1_Click(object sender, EventArgs e)
+        {
+            RegChoose r1 = new RegChoose();
+            r1.Show();
+            this.Close();
         }
     }
 }
