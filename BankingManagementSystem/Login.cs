@@ -70,9 +70,9 @@ namespace BankingManagementSystem
                     // Open admin dashboard
                     //AdminDashboard adminDashboard = new AdminDashboard();
                     //adminDashboard.Show();
-                    MessageBox.Show("Successful Login!");
-                    Registration1 regForm = new Registration1();
-                    regForm.Show();
+                    //MessageBox.Show("Successful Login!");
+                    ClientDashboard c1 = new ClientDashboard();
+                    c1.Show();
                     this.Hide();
                 }
                 else

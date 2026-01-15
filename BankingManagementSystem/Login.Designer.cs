@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.tboxAC = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlBlueBG = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.tboxPass = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblMessageLogIn = new System.Windows.Forms.Label();
+            this.btnForget = new System.Windows.Forms.Button();
             this.lblEmptyAC = new System.Windows.Forms.Label();
             this.lblEmptyPass = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.lblACNO = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.pnlBlueBG.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(196, 657);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 55);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(196, 657);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(146, 55);
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // tboxAC
             // 
@@ -75,57 +75,36 @@
             this.tboxAC.TabIndex = 1;
             this.tboxAC.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label1
+            // pnlBlueBG
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 379);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "A/C NO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pnlBlueBG.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlBlueBG.Controls.Add(this.lblTitle);
+            this.pnlBlueBG.Controls.Add(this.pnlLogo);
+            this.pnlBlueBG.Location = new System.Drawing.Point(0, -1);
+            this.pnlBlueBG.Name = "pnlBlueBG";
+            this.pnlBlueBG.Size = new System.Drawing.Size(519, 212);
+            this.pnlBlueBG.TabIndex = 5;
             // 
-            // label2
+            // lblTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(83, 489);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Password";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTitle.Location = new System.Drawing.Point(226, 136);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(85, 32);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "ABMS";
+            this.lblTitle.Click += new System.EventHandler(this.label5_Click);
             // 
-            // panel1
+            // pnlLogo
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 212);
-            this.panel1.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(226, 136);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 32);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "ABMS";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = global::BankingManagementSystem.Properties.Resources.attachment_97757090__1__removebg_preview;
-            this.panel2.Location = new System.Drawing.Point(217, 40);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(100, 100);
-            this.panel2.TabIndex = 15;
+            this.pnlLogo.BackgroundImage = global::BankingManagementSystem.Properties.Resources.attachment_97757090__1__removebg_preview;
+            this.pnlLogo.Location = new System.Drawing.Point(217, 40);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(100, 100);
+            this.pnlLogo.TabIndex = 15;
             // 
             // label3
             // 
@@ -187,32 +166,32 @@
             this.btnSignUp.UseVisualStyleBackColor = true;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
-            // label8
+            // lblMessageLogIn
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.AliceBlue;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(83, 268);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(353, 38);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Login to your account";
+            this.lblMessageLogIn.AutoSize = true;
+            this.lblMessageLogIn.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblMessageLogIn.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.lblMessageLogIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblMessageLogIn.Location = new System.Drawing.Point(83, 268);
+            this.lblMessageLogIn.Name = "lblMessageLogIn";
+            this.lblMessageLogIn.Size = new System.Drawing.Size(353, 38);
+            this.lblMessageLogIn.TabIndex = 13;
+            this.lblMessageLogIn.Text = "Login to your account";
             // 
-            // button3
+            // btnForget
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.Location = new System.Drawing.Point(304, 559);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(139, 27);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Forgot password?";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnForget.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForget.FlatAppearance.BorderSize = 0;
+            this.btnForget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForget.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForget.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnForget.Location = new System.Drawing.Point(304, 559);
+            this.btnForget.Name = "btnForget";
+            this.btnForget.Size = new System.Drawing.Size(139, 27);
+            this.btnForget.TabIndex = 14;
+            this.btnForget.Text = "Forgot password?";
+            this.btnForget.UseVisualStyleBackColor = true;
+            this.btnForget.Click += new System.EventHandler(this.button3_Click);
             // 
             // lblEmptyAC
             // 
@@ -236,25 +215,26 @@
             this.lblEmptyPass.TabIndex = 17;
             this.lblEmptyPass.Click += new System.EventHandler(this.lblEmptyPass_Click);
             // 
-            // label1
+            // lblACNO
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblACNO.AutoSize = true;
+            this.lblACNO.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblACNO.Location = new System.Drawing.Point(81, 379);
+            this.lblACNO.Name = "lblACNO";
+            this.lblACNO.Size = new System.Drawing.Size(98, 25);
+            this.lblACNO.TabIndex = 3;
+            this.lblACNO.Text = "A/C NO";
+            this.lblACNO.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblPass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(422, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "HELLOOO";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblPass.AutoSize = true;
+            this.lblPass.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPass.Location = new System.Drawing.Point(83, 489);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(114, 25);
+            this.lblPass.TabIndex = 4;
+            this.lblPass.Text = "Password";
             // 
             // Login
             // 
@@ -262,27 +242,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(514, 808);
+            this.Controls.Add(this.lblPass);
+            this.Controls.Add(this.lblACNO);
             this.Controls.Add(this.lblEmptyPass);
             this.Controls.Add(this.lblEmptyAC);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btnForget);
+            this.Controls.Add(this.lblMessageLogIn);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tboxPass);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tboxAC);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pnlBlueBG);
+            this.Controls.Add(this.btnLogin);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlBlueBG.ResumeLayout(false);
+            this.pnlBlueBG.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,21 +270,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox tboxAC;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlBlueBG;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TextBox tboxPass;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSignUp;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblMessageLogIn;
+        private System.Windows.Forms.Button btnForget;
+        private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.Label lblEmptyAC;
         private System.Windows.Forms.Label lblEmptyPass;
+        private System.Windows.Forms.Label lblACNO;
+        private System.Windows.Forms.Label lblPass;
     }
 }
