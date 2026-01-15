@@ -129,6 +129,12 @@
     <Compile Include="TakeLoan.Designer.cs">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrationBanker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationBanker.Designer.cs">
+      <DependentUpon>RegistrationBanker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TakeLoan.resx">
       <DependentUpon>TakeLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationBanker.resx">
+      <DependentUpon>RegistrationBanker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
