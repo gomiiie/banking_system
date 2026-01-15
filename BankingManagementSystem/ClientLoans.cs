@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BankingManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class ClientLoans : Form
     {
-        public Form1()
+        public ClientLoans()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -29,7 +29,8 @@ namespace BankingManagementSystem
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            WithdrawWindow w1 = new WithdrawWindow();
+            w1.Show();
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -45,6 +46,30 @@ namespace BankingManagementSystem
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClientDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ClientSettings cs1 = new ClientSettings();
+            cs1.Show();
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            DepositWindow dw1 = new DepositWindow();
+            dw1.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
