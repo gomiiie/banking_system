@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BankingManagementSystem
 {
-    public partial class ClientTransactions : Form
+    public partial class TakeLoan : Form
     {
-        public ClientTransactions()
+        public TakeLoan()
         {
             InitializeComponent();
         }

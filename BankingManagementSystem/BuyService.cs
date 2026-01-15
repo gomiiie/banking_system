@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BankingManagementSystem
 {
-    public partial class ClientTransactions : Form
+    public partial class BuyService : Form
     {
-        public ClientTransactions()
+        public BuyService()
         {
             InitializeComponent();
+        }
+
+        private void clientSideBar1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

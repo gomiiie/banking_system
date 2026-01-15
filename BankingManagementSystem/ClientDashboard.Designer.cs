@@ -47,14 +47,14 @@
             this.btnMobileRecharge = new System.Windows.Forms.Button();
             this.btnNotifications = new System.Windows.Forms.Button();
             this.btnReview = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnSendMoney = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnTxn = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnSendMoney = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -281,6 +281,35 @@
             this.btnReview.Text = "\r\n\r\n\r\nLeave Review";
             this.btnReview.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(175, 781);
+            this.button1.Margin = new System.Windows.Forms.Padding(125, 60, 60, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 96);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "\r\n\r\n\r\nSend Money";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnSendMoney
+            // 
+            this.btnSendMoney.FlatAppearance.BorderSize = 0;
+            this.btnSendMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendMoney.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSendMoney.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSendMoney.Location = new System.Drawing.Point(175, 399);
+            this.btnSendMoney.Margin = new System.Windows.Forms.Padding(125, 60, 60, 60);
+            this.btnSendMoney.Name = "btnSendMoney";
+            this.btnSendMoney.Size = new System.Drawing.Size(144, 96);
+            this.btnSendMoney.TabIndex = 4;
+            this.btnSendMoney.Text = "\r\n\r\n\r\nSend Money";
+            this.btnSendMoney.UseVisualStyleBackColor = true;
+            this.btnSendMoney.Click += new System.EventHandler(this.btnSendMoney_Click);
+            // 
             // panel5
             // 
             this.panel5.BackgroundImage = global::BankingManagementSystem.Properties.Resources.attachment_97757090__1__removebg_preview;
@@ -383,34 +412,6 @@
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(175, 781);
-            this.button1.Margin = new System.Windows.Forms.Padding(125, 60, 60, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 96);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "\r\n\r\n\r\nSend Money";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnSendMoney
-            // 
-            this.btnSendMoney.FlatAppearance.BorderSize = 0;
-            this.btnSendMoney.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSendMoney.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSendMoney.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSendMoney.Location = new System.Drawing.Point(175, 399);
-            this.btnSendMoney.Margin = new System.Windows.Forms.Padding(125, 60, 60, 60);
-            this.btnSendMoney.Name = "btnSendMoney";
-            this.btnSendMoney.Size = new System.Drawing.Size(144, 96);
-            this.btnSendMoney.TabIndex = 4;
-            this.btnSendMoney.Text = "\r\n\r\n\r\nSend Money";
-            this.btnSendMoney.UseVisualStyleBackColor = true;
             // 
             // ClientDashboard
             // 

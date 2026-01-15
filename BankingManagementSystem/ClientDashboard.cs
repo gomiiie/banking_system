@@ -73,5 +73,11 @@ namespace BankingManagementSystem
         {
 
         }
+
+        private void btnSendMoney_Click(object sender, EventArgs e)
+        {
+            SendMoney s1 = new SendMoney();
+            s1.Show();
+        }
     }
 }

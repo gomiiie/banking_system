@@ -1,6 +1,6 @@
 ﻿namespace BankingManagementSystem
 {
-    partial class Form1
+    partial class ClientTransactions
     {
         /// <summary>
         /// Required designer variable.
@@ -28,133 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnTxn = new System.Windows.Forms.Button();
-            this.btnLoan = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.button10 = new System.Windows.Forms.Button();
+            this.clientSideBar1 = new BankingManagementSystem.ClientSideBar();
+            this.flowLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // flowLayoutPanel2
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(175, 399);
-            this.button1.Margin = new System.Windows.Forms.Padding(125, 60, 60, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 96);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "\r\n\r\n\r\nSend Money";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(439, 399);
-            this.button6.Margin = new System.Windows.Forms.Padding(60);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(144, 96);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "\r\n\r\n\r\nBuy Service\r\n";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(703, 399);
-            this.button7.Margin = new System.Windows.Forms.Padding(60);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 96);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "\r\n\r\n\r\nTake Loan";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(175, 565);
-            this.button8.Margin = new System.Windows.Forms.Padding(125, 10, 60, 60);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 96);
-            this.button8.TabIndex = 5;
-            this.button8.Text = "\r\n\r\n\r\nMobile Recharge";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(703, 565);
-            this.button10.Margin = new System.Windows.Forms.Padding(60, 10, 60, 60);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(144, 96);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "\r\n\r\n\r\nLeave Review";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.Azure;
-            chartArea3.AxisX.MajorGrid.Enabled = false;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightSkyBlue;
-            chartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea3.AxisY.MajorGrid.Enabled = false;
-            chartArea3.BackColor = System.Drawing.Color.Azure;
-            chartArea3.BackImageTransparentColor = System.Drawing.Color.Azure;
-            chartArea3.BackSecondaryColor = System.Drawing.Color.Aquamarine;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Enabled = false;
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(3, 3);
-            this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(400, 233);
-            this.chart1.TabIndex = 8;
-            this.chart1.Text = "chart1";
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.AliceBlue;
+            this.flowLayoutPanel2.Controls.Add(this.panel3);
+            this.flowLayoutPanel2.Controls.Add(this.panel4);
+            this.flowLayoutPanel2.Controls.Add(this.button1);
+            this.flowLayoutPanel2.Controls.Add(this.button6);
+            this.flowLayoutPanel2.Controls.Add(this.button7);
+            this.flowLayoutPanel2.Controls.Add(this.button8);
+            this.flowLayoutPanel2.Controls.Add(this.button9);
+            this.flowLayoutPanel2.Controls.Add(this.button10);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(171, 0);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(25);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(50);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1026, 756);
+            this.flowLayoutPanel2.TabIndex = 12;
             // 
             // panel3
             // 
@@ -224,6 +139,85 @@
             this.panel4.Size = new System.Drawing.Size(406, 239);
             this.panel4.TabIndex = 1;
             // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.Color.Azure;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightSkyBlue;
+            chartArea1.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.BackColor = System.Drawing.Color.Azure;
+            chartArea1.BackImageTransparentColor = System.Drawing.Color.Azure;
+            chartArea1.BackSecondaryColor = System.Drawing.Color.Aquamarine;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(3, 3);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(400, 233);
+            this.chart1.TabIndex = 8;
+            this.chart1.Text = "chart1";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(175, 399);
+            this.button1.Margin = new System.Windows.Forms.Padding(125, 60, 60, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 96);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "\r\n\r\n\r\nSend Money";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(439, 399);
+            this.button6.Margin = new System.Windows.Forms.Padding(60);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(144, 96);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "\r\n\r\n\r\nBuy Service\r\n";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(703, 399);
+            this.button7.Margin = new System.Windows.Forms.Padding(60);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(144, 96);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "\r\n\r\n\r\nTake Loan";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(175, 565);
+            this.button8.Margin = new System.Windows.Forms.Padding(125, 10, 60, 60);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(144, 96);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "\r\n\r\n\r\nMobile Recharge";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // button9
             // 
             this.button9.FlatAppearance.BorderSize = 0;
@@ -237,220 +231,60 @@
             this.button9.Text = "\r\n\r\n\r\nNotifications";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // button10
             // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 372);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(174, 201);
-            this.panel2.TabIndex = 17;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Century Gothic", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(703, 565);
+            this.button10.Margin = new System.Windows.Forms.Padding(60, 10, 60, 60);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(144, 96);
+            this.button10.TabIndex = 7;
+            this.button10.Text = "\r\n\r\n\r\nLeave Review";
+            this.button10.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // clientSideBar1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(174, 153);
-            this.panel1.TabIndex = 2;
+            this.clientSideBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.clientSideBar1.Location = new System.Drawing.Point(0, 0);
+            this.clientSideBar1.Name = "clientSideBar1";
+            this.clientSideBar1.Size = new System.Drawing.Size(177, 756);
+            this.clientSideBar1.TabIndex = 8;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.btnHome);
-            this.flowLayoutPanel1.Controls.Add(this.btnTxn);
-            this.flowLayoutPanel1.Controls.Add(this.btnLoan);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.btnSettings);
-            this.flowLayoutPanel1.Controls.Add(this.btnLogout);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(177, 756);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.flowLayoutPanel2.Controls.Add(this.panel3);
-            this.flowLayoutPanel2.Controls.Add(this.panel4);
-            this.flowLayoutPanel2.Controls.Add(this.button1);
-            this.flowLayoutPanel2.Controls.Add(this.button6);
-            this.flowLayoutPanel2.Controls.Add(this.button7);
-            this.flowLayoutPanel2.Controls.Add(this.button8);
-            this.flowLayoutPanel2.Controls.Add(this.button9);
-            this.flowLayoutPanel2.Controls.Add(this.button10);
-            this.flowLayoutPanel2.Controls.Add(this.dataGridView1);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(171, 0);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(25);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(50);
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1026, 756);
-            this.flowLayoutPanel2.TabIndex = 10;
-            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = global::BankingManagementSystem.Properties.Resources.attachment_97757090__1__removebg_preview;
-            this.panel5.Location = new System.Drawing.Point(31, 26);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(106, 95);
-            this.panel5.TabIndex = 0;
-            // 
-            // btnHome
-            // 
-            this.btnHome.AutoEllipsis = true;
-            this.btnHome.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHome.Image = global::BankingManagementSystem.Properties.Resources.image__2_;
-            this.btnHome.Location = new System.Drawing.Point(0, 169);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(177, 50);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "   Home          ";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // btnTxn
-            // 
-            this.btnTxn.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTxn.FlatAppearance.BorderSize = 0;
-            this.btnTxn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTxn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTxn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTxn.Image = global::BankingManagementSystem.Properties.Resources.image__3_;
-            this.btnTxn.Location = new System.Drawing.Point(0, 239);
-            this.btnTxn.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnTxn.Name = "btnTxn";
-            this.btnTxn.Size = new System.Drawing.Size(177, 50);
-            this.btnTxn.TabIndex = 13;
-            this.btnTxn.Text = "   Transactions";
-            this.btnTxn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTxn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTxn.UseVisualStyleBackColor = false;
-            // 
-            // btnLoan
-            // 
-            this.btnLoan.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLoan.FlatAppearance.BorderSize = 0;
-            this.btnLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLoan.Image = global::BankingManagementSystem.Properties.Resources.image__4_;
-            this.btnLoan.Location = new System.Drawing.Point(0, 309);
-            this.btnLoan.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(177, 50);
-            this.btnLoan.TabIndex = 14;
-            this.btnLoan.Text = "   Loans         ";
-            this.btnLoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLoan.UseVisualStyleBackColor = false;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSettings.Image = global::BankingManagementSystem.Properties.Resources.image__5_;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSettings.Location = new System.Drawing.Point(0, 586);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(177, 50);
-            this.btnSettings.TabIndex = 18;
-            this.btnSettings.Text = "   Settings       ";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogout.Image = global::BankingManagementSystem.Properties.Resources.image__6_;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogout.Location = new System.Drawing.Point(0, 656);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(177, 50);
-            this.btnLogout.TabIndex = 19;
-            this.btnLogout.Text = "   Logout        ";
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(53, 724);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // Form1
+            // ClientTransactions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 756);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.Controls.Add(this.clientSideBar1);
+            this.Name = "ClientTransactions";
+            this.Text = "ClientTransactions";
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnTxn;
-        private System.Windows.Forms.Button btnLoan;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button10;
+        private ClientSideBar clientSideBar1;
     }
 }
