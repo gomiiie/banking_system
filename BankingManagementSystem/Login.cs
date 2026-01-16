@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,19 @@ namespace BankingManagementSystem
         public Login()
         {
             InitializeComponent();
+        }
+
+        private SqlConnection Connect()
+        {
+            string connectionString = @"Data Source=DESKTOP-CQ6UGDS\SQLEXPRESS01;Initial Catalog=ABMS;Integrated Security=True;";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            return conn;
+        }
+
+        private int LogUserIn()
+        {
+            return 2;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -52,6 +66,7 @@ namespace BankingManagementSystem
             MessageBox.Show("To reset your password, please contact our head office at Kuratoli, Dhaka.");
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             lblEmptyPass.Text = lblEmptyAC.Text = "";
@@ -65,7 +80,24 @@ namespace BankingManagementSystem
             }
             if (tboxAC.Text != "" && tboxPass.Text != "")
             {
-                if (tboxAC.Text == "nsm" && tboxPass.Text == "nsm")
+
+                SqlConnection conn = Connect();
+                string query = $"SELECT AC_NO, password FROM AccountTable WHERE AC_NO = {tboxAC.Text} AND password = '{tboxPass.Text}'";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    MessageBox.Show("Successful Login!");
+                    ClientDashboard c1 = new ClientDashboard();
+                    c1.Show();
+                    this.Hide();  
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Credentials");
+                }
+                /*if (tboxAC.Text == "nsm" && tboxPass.Text == "nsm")
                 {
                     // Open admin dashboard
                     //AdminDashboard adminDashboard = new AdminDashboard();
@@ -78,7 +110,7 @@ namespace BankingManagementSystem
                 else
                 {
                     MessageBox.Show("Invalid Account Number or Password.");
-                }
+                }*/
             }
         }
 
