@@ -126,7 +126,9 @@
             this.Name = "WithdrawWindow";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WithdrawWindow";
+            this.Load += new System.EventHandler(this.WithdrawWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
