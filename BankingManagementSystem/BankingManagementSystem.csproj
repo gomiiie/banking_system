@@ -51,11 +51,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Account.cs" />
     <Compile Include="BuyService.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuyService.Designer.cs">
       <DependentUpon>BuyService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientDashboard - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientDashboard - Copy.Designer.cs">
+      <DependentUpon>ClientDashboard - Copy.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientDashboard.cs">
       <SubType>Form</SubType>
@@ -151,6 +158,9 @@
     </Compile>
     <EmbeddedResource Include="BuyService.resx">
       <DependentUpon>BuyService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientDashboard - Copy.resx">
+      <DependentUpon>ClientDashboard - Copy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientDashboard.resx">
       <DependentUpon>ClientDashboard.cs</DependentUpon>

@@ -15,11 +15,13 @@ namespace BankingManagementSystem
 
 
         private Form a;
+        private Account a1;
 
         public ClientSideBar()
         {
             InitializeComponent();
             a = this.FindForm();
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace BankingManagementSystem
             if(a is ClientDashboard) { return; }
             else
             {
-                ClientDashboard c1 = new ClientDashboard();
+                ClientDashboard c1 = new ClientDashboard(a1);
                 c1.Show();
                 a.Close();
             }

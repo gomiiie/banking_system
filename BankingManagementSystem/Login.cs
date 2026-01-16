@@ -26,9 +26,57 @@ namespace BankingManagementSystem
             return conn;
         }
 
-        private int LogUserIn()
+        private void LogUserIn(string AC, string Password)
         {
-            return 2;
+            SqlConnection conn = Connect();
+            string query = $"SELECT * FROM AccountTable WHERE AC_NO = {AC} AND password = '{Password}'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Account a1 = new Account(
+                    acNo: reader[0].ToString(), 
+                    name: reader[2].ToString(),
+                    dob: (DateTime)reader[3],
+                    tin: reader[4].ToString(),
+                    nid: reader[5].ToString(),
+                    address: reader[6].ToString(),
+                    nominee: reader[7].ToString(),
+                    balance: Convert.ToSingle(reader[8]),
+                    accountStatus: reader[9].ToString(),
+                    accountType: Convert.ToByte(reader[10])
+                    );
+                MessageBox.Show("Successful Login!");
+                if (a1.AccountType == 1)
+                {
+                    ClientDashboard c1 = new ClientDashboard(a1);
+                    c1.Show();
+                    this.Hide();
+                }
+                else if (a1.AccountType == 2)
+                {
+                    /*ClientDashboard c1 = new ClientDashboard();
+                    c1.Show();
+                    this.Hide();
+                    return;*/
+                }
+                else if (a1.AccountType == 3)
+                {
+                    /*
+                    ClientDashboard c1 = new ClientDashboard();
+                    c1.Show();
+                    this.Hide();
+                    return;
+                    */
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid Credentials");
+            }
+            reader.Close();
+            conn.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -80,37 +128,7 @@ namespace BankingManagementSystem
             }
             if (tboxAC.Text != "" && tboxPass.Text != "")
             {
-
-                SqlConnection conn = Connect();
-                string query = $"SELECT AC_NO, password FROM AccountTable WHERE AC_NO = {tboxAC.Text} AND password = '{tboxPass.Text}'";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataAdapter adp = new SqlDataAdapter(cmd);
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    MessageBox.Show("Successful Login!");
-                    ClientDashboard c1 = new ClientDashboard();
-                    c1.Show();
-                    this.Hide();  
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Credentials");
-                }
-                /*if (tboxAC.Text == "nsm" && tboxPass.Text == "nsm")
-                {
-                    // Open admin dashboard
-                    //AdminDashboard adminDashboard = new AdminDashboard();
-                    //adminDashboard.Show();
-                    //MessageBox.Show("Successful Login!");
-                    ClientDashboard c1 = new ClientDashboard();
-                    c1.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Account Number or Password.");
-                }*/
+                LogUserIn(tboxAC.Text, tboxPass.Text);
             }
         }
 
