@@ -36,6 +36,7 @@ namespace BankingManagementSystem
         {
             AccountNumber = acNo;
             Name = name;
+            Dob = dob;
             Balance = balance;
             Tin = tin;
             Nid = nid;

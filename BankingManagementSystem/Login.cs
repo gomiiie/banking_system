@@ -38,7 +38,7 @@ namespace BankingManagementSystem
                 Account a1 = new Account(
                     acNo: reader[0].ToString(), 
                     name: reader[2].ToString(),
-                    dob: (DateTime)reader[3],
+                    dob: reader.GetDateTime(3),
                     tin: reader[4].ToString(),
                     nid: reader[5].ToString(),
                     address: reader[6].ToString(),

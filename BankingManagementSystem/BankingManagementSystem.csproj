@@ -51,59 +51,63 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABMSClientTransactions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSClientTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ABMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Account.cs" />
-    <Compile Include="BuyService.cs">
+    <Compile Include="Client\BuyService.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuyService.Designer.cs">
+    <Compile Include="Client\BuyService.Designer.cs">
       <DependentUpon>BuyService.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientDashboard - Copy.cs">
+    <Compile Include="Client\ClientDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientDashboard - Copy.Designer.cs">
-      <DependentUpon>ClientDashboard - Copy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientDashboard.Designer.cs">
+    <Compile Include="Client\ClientDashboard.Designer.cs">
       <DependentUpon>ClientDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientLoans.cs">
+    <Compile Include="Client\ClientLoans.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientLoans.Designer.cs">
+    <Compile Include="Client\ClientLoans.Designer.cs">
       <DependentUpon>ClientLoans.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientSettings.cs">
+    <Compile Include="Client\ClientSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientSettings.Designer.cs">
+    <Compile Include="Client\ClientSettings.Designer.cs">
       <DependentUpon>ClientSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientSideBar.cs">
+    <Compile Include="Client\ClientSideBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ClientSideBar.Designer.cs">
+    <Compile Include="Client\ClientSideBar.Designer.cs">
       <DependentUpon>ClientSideBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientTransactions.cs">
+    <Compile Include="Client\ClientTransactions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientTransactions.Designer.cs">
+    <Compile Include="Client\ClientTransactions.Designer.cs">
       <DependentUpon>ClientTransactions.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepositWindow.cs">
+    <Compile Include="Client\DepositWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepositWindow.Designer.cs">
+    <Compile Include="Client\DepositWindow.Designer.cs">
       <DependentUpon>DepositWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="MobileRecharge.cs">
+    <Compile Include="Client\MobileRecharge.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MobileRecharge.Designer.cs">
+    <Compile Include="Client\MobileRecharge.Designer.cs">
       <DependentUpon>MobileRecharge.cs</DependentUpon>
     </Compile>
     <Compile Include="RegChoose.cs">
@@ -124,16 +128,16 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="SendMoney.cs">
+    <Compile Include="Client\SendMoney.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SendMoney.Designer.cs">
+    <Compile Include="Client\SendMoney.Designer.cs">
       <DependentUpon>SendMoney.cs</DependentUpon>
     </Compile>
-    <Compile Include="TakeLoan.cs">
+    <Compile Include="Client\TakeLoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TakeLoan.Designer.cs">
+    <Compile Include="Client\TakeLoan.Designer.cs">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrationBanker.cs">
@@ -150,40 +154,37 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WithdrawWindow.cs">
+    <Compile Include="Client\WithdrawWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WithdrawWindow.Designer.cs">
+    <Compile Include="Client\WithdrawWindow.Designer.cs">
       <DependentUpon>WithdrawWindow.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BuyService.resx">
+    <EmbeddedResource Include="Client\BuyService.resx">
       <DependentUpon>BuyService.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientDashboard - Copy.resx">
-      <DependentUpon>ClientDashboard - Copy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientDashboard.resx">
+    <EmbeddedResource Include="Client\ClientDashboard.resx">
       <DependentUpon>ClientDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientLoans.resx">
+    <EmbeddedResource Include="Client\ClientLoans.resx">
       <DependentUpon>ClientLoans.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientSettings.resx">
+    <EmbeddedResource Include="Client\ClientSettings.resx">
       <DependentUpon>ClientSettings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientSideBar.resx">
+    <EmbeddedResource Include="Client\ClientSideBar.resx">
       <DependentUpon>ClientSideBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientTransactions.resx">
+    <EmbeddedResource Include="Client\ClientTransactions.resx">
       <DependentUpon>ClientTransactions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepositWindow.resx">
+    <EmbeddedResource Include="Client\DepositWindow.resx">
       <DependentUpon>DepositWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MobileRecharge.resx">
+    <EmbeddedResource Include="Client\MobileRecharge.resx">
       <DependentUpon>MobileRecharge.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegChoose.resx">
@@ -192,10 +193,10 @@
     <EmbeddedResource Include="Registration1.resx">
       <DependentUpon>Registration1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SendMoney.resx">
+    <EmbeddedResource Include="Client\SendMoney.resx">
       <DependentUpon>SendMoney.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TakeLoan.resx">
+    <EmbeddedResource Include="Client\TakeLoan.resx">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrationBanker.resx">
@@ -214,9 +215,31 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="WithdrawWindow.resx">
+    <EmbeddedResource Include="Client\WithdrawWindow.resx">
       <DependentUpon>WithdrawWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ABMSClientTransactions.xsc">
+      <DependentUpon>ABMSClientTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSClientTransactions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSClientTransactions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSClientTransactions.xss">
+      <DependentUpon>ABMSClientTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet.xsc">
+      <DependentUpon>ABMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet.xss">
+      <DependentUpon>ABMSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

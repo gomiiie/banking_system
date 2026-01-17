@@ -25,6 +25,7 @@ namespace BankingManagementSystem
             currAccount = a1;
             label3.Text = "Welcome, " + currAccount.Name;
             lblBalance.Text = "$" + currAccount.Balance.ToString();
+            clientSideBar1.CurrAcc = a1;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -86,7 +87,7 @@ namespace BankingManagementSystem
 
         private void btnSendMoney_Click(object sender, EventArgs e)
         {
-            SendMoney s1 = new SendMoney();
+            SendMoney s1 = new SendMoney(currAccount, this);
             s1.Show();
         }
     }
