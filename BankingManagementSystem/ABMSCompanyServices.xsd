@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ABMSCompanyServices" targetNamespace="http://tempuri.org/ABMSCompanyServices.xsd" xmlns:mstns="http://tempuri.org/ABMSCompanyServices.xsd" xmlns="http://tempuri.org/ABMSCompanyServices.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ABMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ABMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BankingManagementSystem.Properties.Settings.GlobalReference.Default.ABMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CompanyServicesTableAdapter" GeneratorDataComponentClassName="CompanyServicesTableAdapter" Name="CompanyServices" UserDataComponentName="CompanyServicesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ABMSConnectionString (Settings)" DbObjectName="ABMS.dbo.CompanyServices" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT s_id, s_name, s_price, s_description, s_status, AC_NO, name FROM dbo.CompanyServices</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="s_id" DataSetColumn="s_id" />
+              <Mapping SourceColumn="s_name" DataSetColumn="s_name" />
+              <Mapping SourceColumn="s_price" DataSetColumn="s_price" />
+              <Mapping SourceColumn="s_description" DataSetColumn="s_description" />
+              <Mapping SourceColumn="s_status" DataSetColumn="s_status" />
+              <Mapping SourceColumn="AC_NO" DataSetColumn="AC_NO" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ABMSCompanyServices" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ABMSCompanyServices" msprop:Generator_DataSetName="ABMSCompanyServices">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CompanyServices" msprop:Generator_RowEvHandlerName="CompanyServicesRowChangeEventHandler" msprop:Generator_RowDeletedName="CompanyServicesRowDeleted" msprop:Generator_RowDeletingName="CompanyServicesRowDeleting" msprop:Generator_RowEvArgName="CompanyServicesRowChangeEvent" msprop:Generator_TablePropName="CompanyServices" msprop:Generator_RowChangedName="CompanyServicesRowChanged" msprop:Generator_RowChangingName="CompanyServicesRowChanging" msprop:Generator_TableClassName="CompanyServicesDataTable" msprop:Generator_RowClassName="CompanyServicesRow" msprop:Generator_TableVarName="tableCompanyServices" msprop:Generator_UserTableName="CompanyServices">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="s_id" msprop:Generator_ColumnPropNameInRow="s_id" msprop:Generator_ColumnPropNameInTable="s_idColumn" msprop:Generator_ColumnVarNameInTable="columns_id" msprop:Generator_UserColumnName="s_id" type="xs:int" />
+              <xs:element name="s_name" msprop:Generator_ColumnPropNameInRow="s_name" msprop:Generator_ColumnPropNameInTable="s_nameColumn" msprop:Generator_ColumnVarNameInTable="columns_name" msprop:Generator_UserColumnName="s_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="s_price" msprop:Generator_ColumnPropNameInRow="s_price" msprop:Generator_ColumnPropNameInTable="s_priceColumn" msprop:Generator_ColumnVarNameInTable="columns_price" msprop:Generator_UserColumnName="s_price" type="xs:decimal" />
+              <xs:element name="s_description" msprop:Generator_ColumnPropNameInRow="s_description" msprop:Generator_ColumnPropNameInTable="s_descriptionColumn" msprop:Generator_ColumnVarNameInTable="columns_description" msprop:Generator_UserColumnName="s_description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="s_status" msprop:Generator_ColumnPropNameInRow="s_status" msprop:Generator_ColumnPropNameInTable="s_statusColumn" msprop:Generator_ColumnVarNameInTable="columns_status" msprop:Generator_UserColumnName="s_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AC_NO" msprop:Generator_ColumnPropNameInRow="AC_NO" msprop:Generator_ColumnPropNameInTable="AC_NOColumn" msprop:Generator_ColumnVarNameInTable="columnAC_NO" msprop:Generator_UserColumnName="AC_NO" type="xs:int" />
+              <xs:element name="name" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CompanyServices" />
+      <xs:field xpath="mstns:s_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

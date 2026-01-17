@@ -207,6 +207,7 @@
             this.btnBuyServ.TabIndex = 3;
             this.btnBuyServ.Text = "\r\n\r\n\r\nBuy Service\r\n";
             this.btnBuyServ.UseVisualStyleBackColor = true;
+            this.btnBuyServ.Click += new System.EventHandler(this.btnBuyServ_Click);
             // 
             // btnTakeLoan
             // 
@@ -220,6 +221,7 @@
             this.btnTakeLoan.TabIndex = 4;
             this.btnTakeLoan.Text = "\r\n\r\n\r\nTake Loan";
             this.btnTakeLoan.UseVisualStyleBackColor = true;
+            this.btnTakeLoan.Click += new System.EventHandler(this.btnTakeLoan_Click);
             // 
             // btnMobileRecharge
             // 
@@ -233,6 +235,7 @@
             this.btnMobileRecharge.TabIndex = 5;
             this.btnMobileRecharge.Text = "\r\n\r\n\r\nMobile Recharge";
             this.btnMobileRecharge.UseVisualStyleBackColor = true;
+            this.btnMobileRecharge.Click += new System.EventHandler(this.btnMobileRecharge_Click);
             // 
             // btnNotifications
             // 
@@ -276,6 +279,7 @@
             // 
             // clientSideBar1
             // 
+            this.clientSideBar1.CurrAcc = null;
             this.clientSideBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.clientSideBar1.Location = new System.Drawing.Point(0, 0);
             this.clientSideBar1.Name = "clientSideBar1";

@@ -90,5 +90,25 @@ namespace BankingManagementSystem
             SendMoney s1 = new SendMoney(currAccount, this);
             s1.Show();
         }
+
+        private void btnTakeLoan_Click(object sender, EventArgs e)
+        {
+            TakeLoan l1 = new TakeLoan(currAccount);
+            l1.Show();
+            this.Close();
+        }
+
+        private void btnBuyServ_Click(object sender, EventArgs e)
+        {
+            BuyService b1 = new BuyService(currAccount);
+            b1.Show();
+            this.Close();
+        }
+
+        private void btnMobileRecharge_Click(object sender, EventArgs e)
+        {
+            MobileRecharge m1 = new MobileRecharge(currAccount, this);
+            m1.Show();
+        }
     }
 }

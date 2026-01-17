@@ -56,10 +56,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSClientTransactions.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ABMSCompanyServices.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSCompanyServices.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ABMSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ABMSLoanTypes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
     </Compile>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Client\BuyService.cs">
@@ -229,6 +239,17 @@
     <None Include="ABMSClientTransactions.xss">
       <DependentUpon>ABMSClientTransactions.xsd</DependentUpon>
     </None>
+    <None Include="ABMSCompanyServices.xsc">
+      <DependentUpon>ABMSCompanyServices.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSCompanyServices.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSCompanyServices.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSCompanyServices.xss">
+      <DependentUpon>ABMSCompanyServices.xsd</DependentUpon>
+    </None>
     <None Include="ABMSDataSet.xsc">
       <DependentUpon>ABMSDataSet.xsd</DependentUpon>
     </None>
@@ -239,6 +260,17 @@
     </None>
     <None Include="ABMSDataSet.xss">
       <DependentUpon>ABMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSLoanTypes.xsc">
+      <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSLoanTypes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSLoanTypes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSLoanTypes.xss">
+      <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

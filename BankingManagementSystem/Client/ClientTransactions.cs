@@ -30,7 +30,7 @@ namespace BankingManagementSystem
 
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CQ6UGDS\SQLEXPRESS01;Initial Catalog=ABMS;Integrated Security=True;");
             conn.Open();
-            string query = "SELECT * FROM Transactions";
+            string query = "SELECT * FROM Transactions ";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
