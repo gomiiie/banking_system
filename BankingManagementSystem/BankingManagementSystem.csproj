@@ -120,6 +120,24 @@
     <Compile Include="Client\MobileRecharge.Designer.cs">
       <DependentUpon>MobileRecharge.cs</DependentUpon>
     </Compile>
+    <Compile Include="company homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="company homepage.Designer.cs">
+      <DependentUpon>company homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyTransaction.Designer.cs">
+      <DependentUpon>CompanyTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyTransactions1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyTransactions1.Designer.cs">
+      <DependentUpon>CompanyTransactions1.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegChoose.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +208,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Client\DepositWindow.resx">
       <DependentUpon>DepositWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="company homepage.resx">
+      <DependentUpon>company homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyTransaction.resx">
+      <DependentUpon>CompanyTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyTransactions1.resx">
+      <DependentUpon>CompanyTransactions1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
