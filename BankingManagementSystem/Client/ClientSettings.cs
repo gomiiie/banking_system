@@ -28,6 +28,7 @@ namespace BankingManagementSystem
         {
             InitializeComponent();
             this.currAccount = a1;
+            clientSideBar1.CurrAcc = a1;
             tboxAC.Text = currAccount.AccountNumber;
             tboxDOB.Value = currAccount.Dob;
             //tboxNumber.Text = currAccount.PhoneNumber;

@@ -51,5 +51,11 @@ namespace BankingManagementSystem
         {
 
         }
+
+        private void tboxAmt_TextChanged(object sender, EventArgs e)
+        {
+            float amt = Convert.ToSingle(tboxAmt.Text);
+
+        }
     }
 }

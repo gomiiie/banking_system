@@ -31,12 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.clientSideBar1 = new BankingManagementSystem.ClientSideBar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.aBMSLoanTypes = new BankingManagementSystem.ABMSLoanTypes();
-            this.loanTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.loanTypesTableAdapter = new BankingManagementSystem.ABMSLoanTypesTableAdapters.LoanTypesTableAdapter();
             this.ltidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ltnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ltinterestDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,11 +40,15 @@
             this.ltdateaddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ltdescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lasteditbyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loanTypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aBMSLoanTypes = new BankingManagementSystem.ABMSLoanTypes();
+            this.button11 = new System.Windows.Forms.Button();
+            this.loanTypesTableAdapter = new BankingManagementSystem.ABMSLoanTypesTableAdapters.LoanTypesTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSLoanTypes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loanTypesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aBMSLoanTypes)).BeginInit();
             this.SuspendLayout();
             // 
             // clientSideBar1
@@ -69,20 +69,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1019, 756);
             this.panel1.TabIndex = 1;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.Location = new System.Drawing.Point(462, 600);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(125, 75);
-            this.button11.TabIndex = 4;
-            this.button11.Text = "APPLY FOR LOAN";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel2
             // 
@@ -112,20 +98,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(640, 372);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // aBMSLoanTypes
-            // 
-            this.aBMSLoanTypes.DataSetName = "ABMSLoanTypes";
-            this.aBMSLoanTypes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // loanTypesBindingSource
-            // 
-            this.loanTypesBindingSource.DataMember = "LoanTypes";
-            this.loanTypesBindingSource.DataSource = this.aBMSLoanTypes;
-            // 
-            // loanTypesTableAdapter
-            // 
-            this.loanTypesTableAdapter.ClearBeforeFill = true;
             // 
             // ltidDataGridViewTextBoxColumn
             // 
@@ -185,6 +157,34 @@
             this.lasteditbyDataGridViewTextBoxColumn.Name = "lasteditbyDataGridViewTextBoxColumn";
             this.lasteditbyDataGridViewTextBoxColumn.Width = 150;
             // 
+            // loanTypesBindingSource
+            // 
+            this.loanTypesBindingSource.DataMember = "LoanTypes";
+            this.loanTypesBindingSource.DataSource = this.aBMSLoanTypes;
+            // 
+            // aBMSLoanTypes
+            // 
+            this.aBMSLoanTypes.DataSetName = "ABMSLoanTypes";
+            this.aBMSLoanTypes.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.Location = new System.Drawing.Point(462, 600);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(125, 75);
+            this.button11.TabIndex = 4;
+            this.button11.Text = "APPLY FOR LOAN";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // loanTypesTableAdapter
+            // 
+            this.loanTypesTableAdapter.ClearBeforeFill = true;
+            // 
             // TakeLoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -193,13 +193,14 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.clientSideBar1);
             this.Name = "TakeLoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TakeLoan";
             this.Load += new System.EventHandler(this.TakeLoan_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSLoanTypes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loanTypesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aBMSLoanTypes)).EndInit();
             this.ResumeLayout(false);
 
         }

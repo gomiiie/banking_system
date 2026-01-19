@@ -110,5 +110,10 @@ namespace BankingManagementSystem
             MobileRecharge m1 = new MobileRecharge(currAccount, this);
             m1.Show();
         }
+
+        private void clientSideBar1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

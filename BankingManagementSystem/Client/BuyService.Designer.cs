@@ -31,6 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.clientSideBar1 = new BankingManagementSystem.ClientSideBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblNewBal = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblCurrBal = new System.Windows.Forms.Label();
+            this.lblCurrB = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,14 +51,6 @@
             this.companyServicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aBMSCompanyServices = new BankingManagementSystem.ABMSCompanyServices();
             this.companyServicesTableAdapter = new BankingManagementSystem.ABMSCompanyServicesTableAdapters.CompanyServicesTableAdapter();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblCurrB = new System.Windows.Forms.Label();
-            this.lblCurrBal = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblNewBal = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyServicesBindingSource)).BeginInit();
@@ -86,6 +86,76 @@
             this.panel1.Size = new System.Drawing.Size(1026, 756);
             this.panel1.TabIndex = 1;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(721, 461);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(198, 20);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "_____________________";
+            // 
+            // lblNewBal
+            // 
+            this.lblNewBal.AutoSize = true;
+            this.lblNewBal.Location = new System.Drawing.Point(860, 481);
+            this.lblNewBal.Name = "lblNewBal";
+            this.lblNewBal.Size = new System.Drawing.Size(0, 20);
+            this.lblNewBal.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(743, 481);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "New Balance";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(860, 441);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(0, 20);
+            this.lblTotal.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(772, 441);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Net Total";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // lblCurrBal
+            // 
+            this.lblCurrBal.AutoSize = true;
+            this.lblCurrBal.Location = new System.Drawing.Point(860, 408);
+            this.lblCurrBal.Name = "lblCurrBal";
+            this.lblCurrBal.Size = new System.Drawing.Size(0, 20);
+            this.lblCurrBal.TabIndex = 6;
+            // 
+            // lblCurrB
+            // 
+            this.lblCurrB.AutoSize = true;
+            this.lblCurrB.Location = new System.Drawing.Point(721, 408);
+            this.lblCurrB.Name = "lblCurrB";
+            this.lblCurrB.Size = new System.Drawing.Size(124, 20);
+            this.lblCurrB.TabIndex = 5;
+            this.lblCurrB.Text = "Current Balance";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(51, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -103,6 +173,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sidDataGridViewTextBoxColumn,
@@ -191,76 +262,6 @@
             // 
             this.companyServicesTableAdapter.ClearBeforeFill = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
-            // 
-            // lblCurrB
-            // 
-            this.lblCurrB.AutoSize = true;
-            this.lblCurrB.Location = new System.Drawing.Point(721, 408);
-            this.lblCurrB.Name = "lblCurrB";
-            this.lblCurrB.Size = new System.Drawing.Size(124, 20);
-            this.lblCurrB.TabIndex = 5;
-            this.lblCurrB.Text = "Current Balance";
-            // 
-            // lblCurrBal
-            // 
-            this.lblCurrBal.AutoSize = true;
-            this.lblCurrBal.Location = new System.Drawing.Point(860, 408);
-            this.lblCurrBal.Name = "lblCurrBal";
-            this.lblCurrBal.Size = new System.Drawing.Size(0, 20);
-            this.lblCurrBal.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(772, 441);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Net Total";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(860, 441);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(0, 20);
-            this.lblTotal.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(743, 481);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 20);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "New Balance";
-            // 
-            // lblNewBal
-            // 
-            this.lblNewBal.AutoSize = true;
-            this.lblNewBal.Location = new System.Drawing.Point(860, 481);
-            this.lblNewBal.Name = "lblNewBal";
-            this.lblNewBal.Size = new System.Drawing.Size(0, 20);
-            this.lblNewBal.TabIndex = 10;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(721, 461);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(198, 20);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "_____________________";
-            // 
             // BuyService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -269,6 +270,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.clientSideBar1);
             this.Name = "BuyService";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuyService";
             this.Load += new System.EventHandler(this.BuyService_Load);
             this.panel1.ResumeLayout(false);

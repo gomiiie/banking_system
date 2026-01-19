@@ -28,180 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnTxn = new System.Windows.Forms.Button();
-            this.btnLoan = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnEditUpdate = new System.Windows.Forms.Button();
-            this.tboxAC = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tboxAC = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tboxDOB = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tboxNumber = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.tboxName = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tboxNominee = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tboxNID = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tboxTIN = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tboxAddress = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tboxNominee = new System.Windows.Forms.RichTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tboxNumber = new System.Windows.Forms.RichTextBox();
-            this.tboxDOB = new System.Windows.Forms.DateTimePicker();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.btnEditUpdate = new System.Windows.Forms.Button();
+            this.clientSideBar1 = new BankingManagementSystem.ClientSideBar();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.btnHome);
-            this.flowLayoutPanel1.Controls.Add(this.btnTxn);
-            this.flowLayoutPanel1.Controls.Add(this.btnLoan);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.btnSettings);
-            this.flowLayoutPanel1.Controls.Add(this.btnLogout);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(177, 756);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(174, 153);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BackgroundImage = global::BankingManagementSystem.Properties.Resources.attachment_97757090__1__removebg_preview;
-            this.panel5.Location = new System.Drawing.Point(31, 26);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(106, 95);
-            this.panel5.TabIndex = 0;
-            // 
-            // btnHome
-            // 
-            this.btnHome.AutoEllipsis = true;
-            this.btnHome.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHome.Image = global::BankingManagementSystem.Properties.Resources.image__2_;
-            this.btnHome.Location = new System.Drawing.Point(0, 169);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(177, 50);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "   Home          ";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            // 
-            // btnTxn
-            // 
-            this.btnTxn.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnTxn.FlatAppearance.BorderSize = 0;
-            this.btnTxn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTxn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTxn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTxn.Image = global::BankingManagementSystem.Properties.Resources.image__3_;
-            this.btnTxn.Location = new System.Drawing.Point(0, 239);
-            this.btnTxn.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnTxn.Name = "btnTxn";
-            this.btnTxn.Size = new System.Drawing.Size(177, 50);
-            this.btnTxn.TabIndex = 13;
-            this.btnTxn.Text = "   Transactions";
-            this.btnTxn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTxn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTxn.UseVisualStyleBackColor = false;
-            // 
-            // btnLoan
-            // 
-            this.btnLoan.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLoan.FlatAppearance.BorderSize = 0;
-            this.btnLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLoan.Image = global::BankingManagementSystem.Properties.Resources.image__4_;
-            this.btnLoan.Location = new System.Drawing.Point(0, 309);
-            this.btnLoan.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(177, 50);
-            this.btnLoan.TabIndex = 14;
-            this.btnLoan.Text = "   Loans         ";
-            this.btnLoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLoan.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 372);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(174, 201);
-            this.panel2.TabIndex = 17;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSettings.Image = global::BankingManagementSystem.Properties.Resources.image__5_;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSettings.Location = new System.Drawing.Point(0, 586);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(177, 50);
-            this.btnSettings.TabIndex = 18;
-            this.btnSettings.Text = "   Settings       ";
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogout.Image = global::BankingManagementSystem.Properties.Resources.image__6_;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogout.Location = new System.Drawing.Point(0, 656);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(177, 50);
-            this.btnLogout.TabIndex = 19;
-            this.btnLogout.Text = "   Logout        ";
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel2
             // 
@@ -226,47 +80,6 @@
             this.panel3.Size = new System.Drawing.Size(913, 638);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // btnEditUpdate
-            // 
-            this.btnEditUpdate.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnEditUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditUpdate.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEditUpdate.Location = new System.Drawing.Point(400, 546);
-            this.btnEditUpdate.Name = "btnEditUpdate";
-            this.btnEditUpdate.Size = new System.Drawing.Size(118, 62);
-            this.btnEditUpdate.TabIndex = 2;
-            this.btnEditUpdate.Text = "EDIT";
-            this.btnEditUpdate.UseVisualStyleBackColor = false;
-            this.btnEditUpdate.Click += new System.EventHandler(this.btnEditUpdate_Click);
-            // 
-            // tboxAC
-            // 
-            this.tboxAC.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tboxAC.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxAC.Location = new System.Drawing.Point(160, 53);
-            this.tboxAC.Margin = new System.Windows.Forms.Padding(3, 3, 30, 3);
-            this.tboxAC.Name = "tboxAC";
-            this.tboxAC.ReadOnly = true;
-            this.tboxAC.Size = new System.Drawing.Size(68, 32);
-            this.tboxAC.TabIndex = 26;
-            this.tboxAC.Text = "";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(50, 50);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
-            this.label1.Size = new System.Drawing.Size(107, 35);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "A/C NO";
             // 
             // flowLayoutPanel3
             // 
@@ -294,6 +107,33 @@
             this.flowLayoutPanel3.TabIndex = 12;
             this.flowLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel3_Paint);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(50, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
+            this.label1.Size = new System.Drawing.Size(107, 35);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "A/C NO";
+            // 
+            // tboxAC
+            // 
+            this.tboxAC.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tboxAC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxAC.Location = new System.Drawing.Point(160, 53);
+            this.tboxAC.Margin = new System.Windows.Forms.Padding(3, 3, 30, 3);
+            this.tboxAC.Name = "tboxAC";
+            this.tboxAC.ReadOnly = true;
+            this.tboxAC.Size = new System.Drawing.Size(68, 32);
+            this.tboxAC.TabIndex = 26;
+            this.tboxAC.Text = "";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -308,19 +148,57 @@
             this.label4.TabIndex = 33;
             this.label4.Text = "DOB";
             // 
-            // label2
+            // panel4
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(50, 270);
-            this.label2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
-            this.label2.Size = new System.Drawing.Size(113, 35);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "Address";
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.tboxDOB);
+            this.panel4.Location = new System.Drawing.Point(352, 53);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(136, 31);
+            this.panel4.TabIndex = 52;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(53, 425);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 20);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "label7";
+            // 
+            // tboxDOB
+            // 
+            this.tboxDOB.CustomFormat = "dd MMM yyyy";
+            this.tboxDOB.Location = new System.Drawing.Point(0, 2);
+            this.tboxDOB.Name = "tboxDOB";
+            this.tboxDOB.Size = new System.Drawing.Size(122, 26);
+            this.tboxDOB.TabIndex = 51;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(491, 50);
+            this.label6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
+            this.label6.Size = new System.Drawing.Size(113, 35);
+            this.label6.TabIndex = 48;
+            this.label6.Text = "Number";
+            // 
+            // tboxNumber
+            // 
+            this.tboxNumber.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tboxNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxNumber.Location = new System.Drawing.Point(607, 53);
+            this.tboxNumber.Name = "tboxNumber";
+            this.tboxNumber.ReadOnly = true;
+            this.tboxNumber.Size = new System.Drawing.Size(123, 32);
+            this.tboxNumber.TabIndex = 49;
+            this.tboxNumber.Text = "";
             // 
             // label8
             // 
@@ -347,6 +225,32 @@
             this.tboxName.Size = new System.Drawing.Size(560, 32);
             this.tboxName.TabIndex = 36;
             this.tboxName.Text = "";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(50, 160);
+            this.label5.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
+            this.label5.Size = new System.Drawing.Size(120, 35);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Nominee";
+            // 
+            // tboxNominee
+            // 
+            this.tboxNominee.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tboxNominee.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxNominee.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxNominee.Location = new System.Drawing.Point(173, 163);
+            this.tboxNominee.Name = "tboxNominee";
+            this.tboxNominee.ReadOnly = true;
+            this.tboxNominee.Size = new System.Drawing.Size(568, 32);
+            this.tboxNominee.TabIndex = 47;
+            this.tboxNominee.Text = "";
             // 
             // label9
             // 
@@ -401,6 +305,20 @@
             this.tboxTIN.TabIndex = 40;
             this.tboxTIN.Text = "";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(50, 270);
+            this.label2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
+            this.label2.Size = new System.Drawing.Size(113, 35);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Address";
+            // 
             // tboxAddress
             // 
             this.tboxAddress.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -413,83 +331,28 @@
             this.tboxAddress.TabIndex = 45;
             this.tboxAddress.Text = "";
             // 
-            // label5
+            // btnEditUpdate
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(50, 160);
-            this.label5.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
-            this.label5.Size = new System.Drawing.Size(120, 35);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "Nominee";
+            this.btnEditUpdate.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnEditUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditUpdate.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditUpdate.Location = new System.Drawing.Point(400, 546);
+            this.btnEditUpdate.Name = "btnEditUpdate";
+            this.btnEditUpdate.Size = new System.Drawing.Size(118, 62);
+            this.btnEditUpdate.TabIndex = 2;
+            this.btnEditUpdate.Text = "EDIT";
+            this.btnEditUpdate.UseVisualStyleBackColor = false;
+            this.btnEditUpdate.Click += new System.EventHandler(this.btnEditUpdate_Click);
             // 
-            // tboxNominee
+            // clientSideBar1
             // 
-            this.tboxNominee.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tboxNominee.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxNominee.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNominee.Location = new System.Drawing.Point(173, 163);
-            this.tboxNominee.Name = "tboxNominee";
-            this.tboxNominee.ReadOnly = true;
-            this.tboxNominee.Size = new System.Drawing.Size(568, 32);
-            this.tboxNominee.TabIndex = 47;
-            this.tboxNominee.Text = "";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.DodgerBlue;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(491, 50);
-            this.label6.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(15, 10, 40, 10);
-            this.label6.Size = new System.Drawing.Size(113, 35);
-            this.label6.TabIndex = 48;
-            this.label6.Text = "Number";
-            // 
-            // tboxNumber
-            // 
-            this.tboxNumber.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tboxNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNumber.Location = new System.Drawing.Point(607, 53);
-            this.tboxNumber.Name = "tboxNumber";
-            this.tboxNumber.ReadOnly = true;
-            this.tboxNumber.Size = new System.Drawing.Size(123, 32);
-            this.tboxNumber.TabIndex = 49;
-            this.tboxNumber.Text = "";
-            // 
-            // tboxDOB
-            // 
-            this.tboxDOB.CustomFormat = "dd MMM yyyy";
-            this.tboxDOB.Location = new System.Drawing.Point(0, 2);
-            this.tboxDOB.Name = "tboxDOB";
-            this.tboxDOB.Size = new System.Drawing.Size(122, 26);
-            this.tboxDOB.TabIndex = 51;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.tboxDOB);
-            this.panel4.Location = new System.Drawing.Point(352, 53);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(136, 31);
-            this.panel4.TabIndex = 52;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(0, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
-            this.label7.TabIndex = 52;
-            this.label7.Text = "label7";
+            this.clientSideBar1.CurrAcc = null;
+            this.clientSideBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.clientSideBar1.Location = new System.Drawing.Point(0, 0);
+            this.clientSideBar1.Name = "clientSideBar1";
+            this.clientSideBar1.Size = new System.Drawing.Size(177, 756);
+            this.clientSideBar1.TabIndex = 1;
             // 
             // ClientSettings
             // 
@@ -497,11 +360,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 756);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.clientSideBar1);
             this.Name = "ClientSettings";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClientSettings";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
@@ -513,16 +375,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button btnTxn;
-        private System.Windows.Forms.Button btnLoan;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnEditUpdate;
@@ -545,5 +397,6 @@
         private System.Windows.Forms.DateTimePicker tboxDOB;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label7;
+        private ClientSideBar clientSideBar1;
     }
 }

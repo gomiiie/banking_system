@@ -285,6 +285,7 @@
             this.clientSideBar1.Name = "clientSideBar1";
             this.clientSideBar1.Size = new System.Drawing.Size(177, 756);
             this.clientSideBar1.TabIndex = 9;
+            this.clientSideBar1.Load += new System.EventHandler(this.clientSideBar1_Load);
             // 
             // ClientDashboard
             // 
