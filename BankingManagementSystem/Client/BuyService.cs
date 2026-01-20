@@ -97,7 +97,6 @@ namespace BankingManagementSystem
             lblTotal.Text = price.ToString();
             lblNewBal.Text = "$  " + (currAcc.Balance - price).ToString();
             compAccNo = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-
         }
 
         private void label4_Click(object sender, EventArgs e)
