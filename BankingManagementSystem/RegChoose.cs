@@ -31,14 +31,14 @@ namespace BankingManagementSystem
 
         private void btnChoose2_Click(object sender, EventArgs e)
         {
-            RegistrationClient reg2Form = new RegistrationClient();
+            RegistrationBanker reg2Form = new RegistrationBanker();
             reg2Form.Show();
             this.Hide();
         }
 
         private void btnChoose3_Click(object sender, EventArgs e)
         {
-            RegistrationClient reg3Form = new RegistrationClient();
+            RegistrationCompany reg3Form = new RegistrationCompany();
             reg3Form.Show();
             this.Hide();
         }

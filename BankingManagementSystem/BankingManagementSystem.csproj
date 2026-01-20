@@ -66,10 +66,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ABMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ABMSLoanTypes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankerDashboard.Designer.cs">
+      <DependentUpon>BankerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankerSideBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BankerSideBar.Designer.cs">
+      <DependentUpon>BankerSideBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Client\BuyService.cs">
@@ -194,6 +211,12 @@
     <Compile Include="Client\WithdrawWindow.Designer.cs">
       <DependentUpon>WithdrawWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BankerDashboard.resx">
+      <DependentUpon>BankerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankerSideBar.resx">
+      <DependentUpon>BankerSideBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client\BuyService.resx">
       <DependentUpon>BuyService.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +319,17 @@
     </None>
     <None Include="ABMSDataSet.xss">
       <DependentUpon>ABMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet1.xsc">
+      <DependentUpon>ABMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet1.xss">
+      <DependentUpon>ABMSDataSet1.xsd</DependentUpon>
     </None>
     <None Include="ABMSLoanTypes.xsc">
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>

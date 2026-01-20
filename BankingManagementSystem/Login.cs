@@ -56,10 +56,10 @@ namespace BankingManagementSystem
                 }
                 else if (a1.AccountType == 2)
                 {
-                    /*ClientDashboard c1 = new ClientDashboard();
+                    BankerDashboard c1 = new BankerDashboard(a1.AccountNumber);
                     c1.Show();
                     this.Hide();
-                    return;*/
+                    return;
                 }
                 else if (a1.AccountType == 3)
                 {
