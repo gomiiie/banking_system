@@ -126,6 +126,12 @@
     <Compile Include="company homepage.Designer.cs">
       <DependentUpon>company homepage.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompanyServces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyServces.Designer.cs">
+      <DependentUpon>CompanyServces.cs</DependentUpon>
+    </Compile>
     <Compile Include="CompanyTransaction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="company homepage.resx">
       <DependentUpon>company homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyServces.resx">
+      <DependentUpon>CompanyServces.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CompanyTransaction.resx">
       <DependentUpon>CompanyTransaction.cs</DependentUpon>
