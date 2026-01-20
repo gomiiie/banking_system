@@ -20,8 +20,8 @@ namespace BankingManagementSystem
         private void btnEnter_Click(object sender, EventArgs e)
         {
             //Registration1 loginForm = new Registration1();
-            Login loginForm = new Login();
-            loginForm.Show();
+            CompanyHome c1 = new CompanyHome();
+            c1.Show();
             this.Hide();
 
         }
