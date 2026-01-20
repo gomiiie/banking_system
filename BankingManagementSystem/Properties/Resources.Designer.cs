@@ -83,6 +83,16 @@ namespace BankingManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6122582_3___1_ {
+            get {
+                object obj = ResourceManager.GetObject("6122582(3) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap attachment_97757090__1__removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("attachment_97757090__1_-removebg-preview", resourceCulture);

@@ -24,21 +24,21 @@ namespace BankingManagementSystem
 
         private void btnChoose1_Click(object sender, EventArgs e)
         {
-            Registration1 reg1Form = new Registration1();
+            RegistrationClient reg1Form = new RegistrationClient();
             reg1Form.Show();
             this.Hide();
         }
 
         private void btnChoose2_Click(object sender, EventArgs e)
         {
-            Registration1 reg2Form = new Registration1();
+            RegistrationClient reg2Form = new RegistrationClient();
             reg2Form.Show();
             this.Hide();
         }
 
         private void btnChoose3_Click(object sender, EventArgs e)
         {
-            Registration1 reg3Form = new Registration1();
+            RegistrationClient reg3Form = new RegistrationClient();
             reg3Form.Show();
             this.Hide();
         }

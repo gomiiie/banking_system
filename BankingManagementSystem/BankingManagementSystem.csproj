@@ -150,11 +150,11 @@
     <Compile Include="RegChoose.Designer.cs">
       <DependentUpon>RegChoose.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registration1.cs">
+    <Compile Include="RegistrationClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registration1.Designer.cs">
-      <DependentUpon>Registration1.cs</DependentUpon>
+    <Compile Include="RegistrationClient.Designer.cs">
+      <DependentUpon>RegistrationClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -173,6 +173,12 @@
     </Compile>
     <Compile Include="Client\TakeLoan.Designer.cs">
       <DependentUpon>TakeLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationCompany.Designer.cs">
+      <DependentUpon>RegistrationCompany.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrationBanker.cs">
       <SubType>Form</SubType>
@@ -236,14 +242,17 @@
     <EmbeddedResource Include="RegChoose.resx">
       <DependentUpon>RegChoose.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registration1.resx">
-      <DependentUpon>Registration1.cs</DependentUpon>
+    <EmbeddedResource Include="RegistrationClient.resx">
+      <DependentUpon>RegistrationClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\SendMoney.resx">
       <DependentUpon>SendMoney.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\TakeLoan.resx">
       <DependentUpon>TakeLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationCompany.resx">
+      <DependentUpon>RegistrationCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrationBanker.resx">
       <DependentUpon>RegistrationBanker.cs</DependentUpon>
@@ -359,6 +368,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\image %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\6122582%283%29 %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
