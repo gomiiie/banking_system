@@ -18,24 +18,39 @@ namespace BankingManagementSystem
         private float depositAmt;
         private Account currAccount;
         private ClientDashboard c1;
-        public DepositWindow()
-        {
-            InitializeComponent();
-        }
-
 
         public DepositWindow(Account a1, ClientDashboard c1)
         {
             InitializeComponent();
             currAccount = a1;
             this.c1 = c1;
+            label6.Text = currAccount.AccountNumber;
+            lblAmt.Text = "";
         }
-
-        
 
         private void button11_Click(object sender, EventArgs e)
         {
+            if (!Decimal.TryParse(tboxDepostAmt.Text,out decimal r))
+            {
+                lblAmt.Text = "Please enter a numeric amount.";
+                return;
+            }
+            if (comboBox1.Text == "")
+            {
+                lblAmt.Text = "Please select a deposit method.";
+                return;
+            }
             depositAmt = Convert.ToSingle(tboxDepostAmt.Text);
+            if (depositAmt <= 0)
+            {
+                lblAmt.Text = "Please enter a positive amount.";
+                return;
+            }
+            if (depositAmt > 10000)
+            {
+                lblAmt.Text = "Deposit limit is $10,000.";
+                return;
+            }
             currAccount.Balance += depositAmt;
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CQ6UGDS\SQLEXPRESS01;Initial Catalog=ABMS;Integrated Security=True;");
             conn.Open();
@@ -48,9 +63,9 @@ namespace BankingManagementSystem
             this.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace BankingManagementSystem
         private string nominee;
         private string accountStatus;
         private byte accountType;
+        private string number;
 
         public string AccountNumber { get; set; }
         public string Name { get; set; }
@@ -29,10 +30,11 @@ namespace BankingManagementSystem
         public string Nominee { get; set; }
         public string AccountStatus { get; set; }
         public byte AccountType { get; set; }
+        public string Number { get; set; }
 
         public Account() {}
 
-        public Account(string acNo, string name, DateTime dob, float balance, string tin, string nid, string address, string nominee, string accountStatus, byte accountType)
+        public Account(string acNo, string name, DateTime dob, float balance, string tin, string nid, string address, string nominee, string accountStatus, byte accountType, string number)
         {
             AccountNumber = acNo;
             Name = name;
@@ -44,6 +46,7 @@ namespace BankingManagementSystem
             Nominee = nominee;
             AccountStatus = accountStatus;
             AccountType = accountType;
+            Number = number;
         }
 
     }

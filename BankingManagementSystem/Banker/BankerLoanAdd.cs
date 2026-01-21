@@ -31,22 +31,22 @@ namespace BankingManagementSystem
                 MessageBox.Show("Please enter a name within 50 characters.");
                 flag = false;
             }
-            if (!decimal.TryParse(tboxIR.Text, out decimal ir) || ir < 0 || ir > 100)
+            else if (!decimal.TryParse(tboxIR.Text, out decimal ir) || ir < 0 || ir > 100)
             {
                 MessageBox.Show("Please enter a valid interest rate (0-100).");
                 flag = false;
             }
-            if (cbStatus.SelectedIndex == -1)
+            else if (cbStatus.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select a status.");
                 flag = false;
             }
-            if (!int.TryParse(tboxDur.Text, out int dur) || dur <= 0 || dur >50)
+            else if (!int.TryParse(tboxDur.Text, out int dur) || dur <= 0 || dur >50)
             {
                 MessageBox.Show("Please enter a valid duration in integer years (0-50)");
                 flag = false;
             }
-            if (tboxDescription.Text.Length < 0 || tboxDescription.Text.Length > 100)
+            else if (tboxDescription.Text.Length < 0 || tboxDescription.Text.Length > 100)
             {
                 MessageBox.Show("Please enter a description within 100 characters.");
                 flag = false;

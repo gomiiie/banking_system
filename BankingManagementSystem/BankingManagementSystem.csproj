@@ -210,10 +210,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ABMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ABMSLoanTypes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ABMSLoanTypessss.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSLoanTypessss.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ABMSTransactions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSTransactions.xsd</DependentUpon>
     </Compile>
     <Compile Include="Banker\BankerLoanAdd.cs">
       <SubType>Form</SubType>
@@ -584,6 +599,17 @@
     <None Include="ABMSDataSet4.xss">
       <DependentUpon>ABMSDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="ABMSDataSet5.xsc">
+      <DependentUpon>ABMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet5.xss">
+      <DependentUpon>ABMSDataSet5.xsd</DependentUpon>
+    </None>
     <None Include="ABMSLoanTypes.xsc">
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
     </None>
@@ -594,6 +620,28 @@
     </None>
     <None Include="ABMSLoanTypes.xss">
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSLoanTypessss.xsc">
+      <DependentUpon>ABMSLoanTypessss.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSLoanTypessss.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSLoanTypessss.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSLoanTypessss.xss">
+      <DependentUpon>ABMSLoanTypessss.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSTransactions.xsc">
+      <DependentUpon>ABMSTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSTransactions.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSTransactions.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSTransactions.xss">
+      <DependentUpon>ABMSTransactions.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -650,6 +698,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\6122582%283%29 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-initiate-money-transfer-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-initiate-money-transfer-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-mobile-money-68 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-receipt-dollar-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-loan-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icons8-notifications-50 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

@@ -74,19 +74,19 @@ namespace BankingManagementSystem
             currForm = this.FindForm();
             if(currForm is ClientDashboard)
             {
-                btnHome.BackColor = Color.FromArgb(26, 174, 248);
+                btnHome.BackColor = Color.FromArgb(53, 134, 249);
             }
             else if(currForm is ClientTransactions)
             {
-                btnTxn.BackColor = Color.FromArgb(26, 174, 248);
+                btnTxn.BackColor = Color.FromArgb(53, 134, 249);
             }
             else if(currForm is ClientLoans)
             {
-                btnLoan.BackColor = Color.FromArgb(26, 174, 248);
+                btnLoan.BackColor = Color.FromArgb(53, 134, 249);
             }
             else if(currForm is ClientSettings)
             {
-                btnSettings.BackColor = Color.FromArgb(26, 174, 248);
+                btnSettings.BackColor = Color.FromArgb(53, 134, 249);
             }
         }
     }

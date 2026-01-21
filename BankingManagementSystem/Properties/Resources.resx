@@ -124,8 +124,17 @@
   <data name="image (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\image (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-initiate-money-transfer-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-initiate-money-transfer-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-home-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\icons8-home-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-initiate-money-transfer-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-initiate-money-transfer-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-loan-64 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-loan-64 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\image (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +145,14 @@
   <data name="dell-logo-vector-download-11574216103ng3d4rrcip" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\dell-logo-vector-download-11574216103ng3d4rrcip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-mobile-money-68 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-mobile-money-68 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="attachment_97757090__1_-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\attachment_97757090__1_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6122582(3) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\6122582(3) (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\image (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +162,9 @@
   </data>
   <data name="image (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\image (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-receipt-dollar-100 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-receipt-dollar-100 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dell-logo-vector-download-11574216103ng3d4rrcip-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\dell-logo-vector-download-11574216103ng3d4rrcip-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,7 +178,7 @@
   <data name="icons8-home-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\icons8-home-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6122582(3) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\6122582(3) (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-notifications-50 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\icons8-notifications-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

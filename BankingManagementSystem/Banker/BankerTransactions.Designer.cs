@@ -29,38 +29,44 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.aBMSClientTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aBMSClientTransactions = new BankingManagementSystem.ABMSClientTransactions();
             this.label1 = new System.Windows.Forms.Label();
-            //this.aBMSDataSet1 = new BankingManagementSystem.ABMSDataSet1();
             this.transactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            //this.transactionsTableAdapter = new BankingManagementSystem.ABMSDataSet1TableAdapters.TransactionsTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.transactionsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.transactionsTableAdapter1 = new BankingManagementSystem.ABMSClientTransactionsTableAdapters.TransactionsTableAdapter();
+            this.aBMSTransactions = new BankingManagementSystem.ABMSTransactions();
+            this.transactionsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.aBMSDataSet5 = new BankingManagementSystem.ABMSDataSet5();
+            this.transactionsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.transactionsTableAdapter = new BankingManagementSystem.ABMSDataSet5TableAdapters.TransactionsTableAdapter();
             this.txnidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txnfromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txntoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txndateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txnamtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txn_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.l_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.searchBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txntypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bankerSideBar1 = new BankingManagementSystem.BankerSideBar();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactions)).BeginInit();
-            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aBMSTransactions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // aBMSClientTransactionsBindingSource
@@ -77,25 +83,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 108);
+            this.label1.Location = new System.Drawing.Point(58, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(367, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "All Transactions History";
             // 
-            // aBMSDataSet1
-            // 
-            //this.aBMSDataSet1.DataSetName = "ABMSDataSet1";
-            //this.aBMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // transactionsBindingSource
             // 
             this.transactionsBindingSource.DataMember = "Transactions";
-            //this.transactionsBindingSource.DataSource = this.aBMSDataSet1;
-            // 
-            // transactionsTableAdapter
-            // 
-            //this.transactionsTableAdapter.ClearBeforeFill = true;
             // 
             // label3
             // 
@@ -111,10 +107,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.searchBox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(175, 0);
@@ -122,55 +118,22 @@
             this.panel1.Size = new System.Drawing.Size(1043, 839);
             this.panel1.TabIndex = 16;
             // 
-            // dataGridView1
+            // pictureBox1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(193)))), ((int)(((byte)(226)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(145)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.txnidDataGridViewTextBoxColumn,
-            this.txnfromDataGridViewTextBoxColumn,
-            this.txntoDataGridViewTextBoxColumn,
-            this.txndateDataGridViewTextBoxColumn,
-            this.txnamtDataGridViewTextBoxColumn,
-            this.txn_type,
-            this.l_id});
-            this.dataGridView1.DataSource = this.transactionsBindingSource1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 283);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(145)))), ((int)(((byte)(207)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(917, 484);
-            this.dataGridView1.TabIndex = 8;
+            this.pictureBox1.Location = new System.Drawing.Point(66, 174);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(43, 37);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // searchBox
+            // 
+            this.searchBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchBox.Location = new System.Drawing.Point(115, 174);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(314, 37);
+            this.searchBox.TabIndex = 15;
+            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
             // transactionsBindingSource1
             // 
@@ -181,83 +144,134 @@
             // 
             this.transactionsTableAdapter1.ClearBeforeFill = true;
             // 
+            // aBMSTransactions
+            // 
+            this.aBMSTransactions.DataSetName = "ABMSTransactions";
+            this.aBMSTransactions.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // transactionsBindingSource2
+            // 
+            this.transactionsBindingSource2.DataMember = "Transactions";
+            this.transactionsBindingSource2.DataSource = this.aBMSClientTransactionsBindingSource;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(193)))), ((int)(((byte)(226)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(145)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.txnidDataGridViewTextBoxColumn,
+            this.txnfromDataGridViewTextBoxColumn,
+            this.txntoDataGridViewTextBoxColumn,
+            this.txndateDataGridViewTextBoxColumn,
+            this.txnamtDataGridViewTextBoxColumn,
+            this.txntypeDataGridViewTextBoxColumn,
+            this.lidDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.transactionsBindingSource3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(228)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.Location = new System.Drawing.Point(66, 260);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(145)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(910, 500);
+            this.dataGridView1.TabIndex = 20;
+            // 
+            // aBMSDataSet5
+            // 
+            this.aBMSDataSet5.DataSetName = "ABMSDataSet5";
+            this.aBMSDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // transactionsBindingSource3
+            // 
+            this.transactionsBindingSource3.DataMember = "Transactions";
+            this.transactionsBindingSource3.DataSource = this.aBMSDataSet5;
+            // 
+            // transactionsTableAdapter
+            // 
+            this.transactionsTableAdapter.ClearBeforeFill = true;
+            // 
             // txnidDataGridViewTextBoxColumn
             // 
             this.txnidDataGridViewTextBoxColumn.DataPropertyName = "txn_id";
-            this.txnidDataGridViewTextBoxColumn.HeaderText = "TID";
-            this.txnidDataGridViewTextBoxColumn.MinimumWidth = 70;
+            this.txnidDataGridViewTextBoxColumn.HeaderText = "TXN ID";
+            this.txnidDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.txnidDataGridViewTextBoxColumn.Name = "txnidDataGridViewTextBoxColumn";
             this.txnidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.txnidDataGridViewTextBoxColumn.Width = 70;
             // 
             // txnfromDataGridViewTextBoxColumn
             // 
             this.txnfromDataGridViewTextBoxColumn.DataPropertyName = "txn_from";
-            this.txnfromDataGridViewTextBoxColumn.HeaderText = "From";
-            this.txnfromDataGridViewTextBoxColumn.MinimumWidth = 80;
+            this.txnfromDataGridViewTextBoxColumn.HeaderText = "Sender";
+            this.txnfromDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.txnfromDataGridViewTextBoxColumn.Name = "txnfromDataGridViewTextBoxColumn";
-            this.txnfromDataGridViewTextBoxColumn.Width = 80;
             // 
             // txntoDataGridViewTextBoxColumn
             // 
             this.txntoDataGridViewTextBoxColumn.DataPropertyName = "txn_to";
-            this.txntoDataGridViewTextBoxColumn.FillWeight = 10F;
-            this.txntoDataGridViewTextBoxColumn.HeaderText = "To";
-            this.txntoDataGridViewTextBoxColumn.MinimumWidth = 100;
+            this.txntoDataGridViewTextBoxColumn.HeaderText = "Receiver";
+            this.txntoDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.txntoDataGridViewTextBoxColumn.Name = "txntoDataGridViewTextBoxColumn";
-            this.txntoDataGridViewTextBoxColumn.Width = 150;
             // 
             // txndateDataGridViewTextBoxColumn
             // 
             this.txndateDataGridViewTextBoxColumn.DataPropertyName = "txn_date";
-            this.txndateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.txndateDataGridViewTextBoxColumn.MinimumWidth = 180;
+            this.txndateDataGridViewTextBoxColumn.HeaderText = "Date of Transaction";
+            this.txndateDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.txndateDataGridViewTextBoxColumn.Name = "txndateDataGridViewTextBoxColumn";
-            this.txndateDataGridViewTextBoxColumn.Width = 180;
             // 
             // txnamtDataGridViewTextBoxColumn
             // 
             this.txnamtDataGridViewTextBoxColumn.DataPropertyName = "txn_amt";
             this.txnamtDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.txnamtDataGridViewTextBoxColumn.MinimumWidth = 130;
+            this.txnamtDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.txnamtDataGridViewTextBoxColumn.Name = "txnamtDataGridViewTextBoxColumn";
-            this.txnamtDataGridViewTextBoxColumn.Width = 130;
             // 
-            // txn_type
+            // txntypeDataGridViewTextBoxColumn
             // 
-            this.txn_type.DataPropertyName = "txn_type";
-            this.txn_type.HeaderText = "Type";
-            this.txn_type.MinimumWidth = 8;
-            this.txn_type.Name = "txn_type";
-            this.txn_type.Width = 150;
+            this.txntypeDataGridViewTextBoxColumn.DataPropertyName = "txn_type";
+            this.txntypeDataGridViewTextBoxColumn.HeaderText = "Type";
+            this.txntypeDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.txntypeDataGridViewTextBoxColumn.Name = "txntypeDataGridViewTextBoxColumn";
             // 
-            // l_id
+            // lidDataGridViewTextBoxColumn
             // 
-            this.l_id.DataPropertyName = "l_id";
-            this.l_id.HeaderText = "SLID";
-            this.l_id.MinimumWidth = 8;
-            this.l_id.Name = "l_id";
-            this.l_id.Width = 90;
-            // 
-            // searchBox
-            // 
-            this.searchBox.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(115, 207);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(314, 37);
-            this.searchBox.TabIndex = 15;
-            this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(66, 207);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(43, 37);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.lidDataGridViewTextBoxColumn.DataPropertyName = "l_id";
+            this.lidDataGridViewTextBoxColumn.HeaderText = "SLID";
+            this.lidDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.lidDataGridViewTextBoxColumn.Name = "lidDataGridViewTextBoxColumn";
             // 
             // bankerSideBar1
             // 
+            this.bankerSideBar1.AC_NO = null;
             this.bankerSideBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bankerSideBar1.Location = new System.Drawing.Point(0, 0);
             this.bankerSideBar1.Name = "bankerSideBar1";
@@ -277,13 +291,16 @@
             this.Load += new System.EventHandler(this.BankerTransactions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactions)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aBMSTransactions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -299,17 +316,22 @@
         //private ABMSDataSet1TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource transactionsBindingSource1;
         private ABMSClientTransactionsTableAdapters.TransactionsTableAdapter transactionsTableAdapter1;
         private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private ABMSTransactions aBMSTransactions;
+        private System.Windows.Forms.BindingSource transactionsBindingSource2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private ABMSDataSet5 aBMSDataSet5;
+        private System.Windows.Forms.BindingSource transactionsBindingSource3;
+        private ABMSDataSet5TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnfromDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txntoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txndateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnamtDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn txn_type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn l_id;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn txntypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lidDataGridViewTextBoxColumn;
     }
 }

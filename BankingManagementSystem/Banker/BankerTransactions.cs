@@ -24,8 +24,12 @@ namespace BankingManagementSystem.Banker
 
         private void BankerTransactions_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'aBMSDataSet5.Transactions' table. You can move, or remove it, as needed.
+            this.transactionsTableAdapter.Fill(this.aBMSDataSet5.Transactions);
+            // TODO: This line of code loads data into the 'aBMSTransactions.Transactions' table. You can move, or remove it, as needed.
+            //this.transactionsTableAdapter.Fill(this.aBMSTransactions.Transactions);
             // TODO: This line of code loads data into the 'aBMSClientTransactions.Transactions' table. You can move, or remove it, as needed.
-            this.transactionsTableAdapter1.Fill(this.aBMSClientTransactions.Transactions);
+            //this.transactionsTableAdapter1.Fill(this.aBMSClientTransactions.Transactions);
 
         }
 

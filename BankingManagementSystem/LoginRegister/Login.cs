@@ -28,14 +28,15 @@ namespace BankingManagementSystem
 
         private void LogUserIn(string AC, string Password)
         {
+            Account a1;
             SqlConnection conn = Connect();
-            string query = $"SELECT * FROM AccountTable WHERE AC_NO = {AC} AND password = '{Password}'";
+            string query = $"SELECT * FROM AllAccountDetails WHERE AC_NO = {AC} AND password = '{Password}'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.Read())
             {
-                Account a1 = new Account(
+                a1 = new Account(
                     acNo: reader[0].ToString(), 
                     name: reader[2].ToString(),
                     dob: reader.GetDateTime(3),
@@ -45,35 +46,39 @@ namespace BankingManagementSystem
                     nominee: reader[7].ToString(),
                     balance: Convert.ToSingle(reader[8]),
                     accountStatus: reader[9].ToString(),
-                    accountType: Convert.ToByte(reader[10])
+                    accountType: Convert.ToByte(reader[10]),
+                    number: reader[11].ToString()
                     );
-                MessageBox.Show("Successful Login!");
-                if (a1.AccountType == 1)
-                {
-                    ClientDashboard c1 = new ClientDashboard(a1);
-                    c1.Show();
-                    this.Hide();
-                }
-                else if (a1.AccountType == 2)
-                {
-                    BankerDashboard c1 = new BankerDashboard(a1.AccountNumber);
-                    c1.Show();
-                    this.Hide();
-                    return;
-                }
-                else if (a1.AccountType == 3)
-                {
-                    /*
-                    ClientDashboard c1 = new ClientDashboard();
-                    c1.Show();
-                    this.Hide();
-                    return;
-                    */
-                }
+
             }
             else
             {
                 MessageBox.Show("Invalid Credentials");
+                reader.Close();
+                conn.Close();
+                return;
+            }
+
+            MessageBox.Show("Successful Login!");
+            if (a1.AccountType == 1)
+            {
+                ClientDashboard c1 = new ClientDashboard(a1);
+                c1.Show();
+                this.Hide();
+            }
+            else if (a1.AccountType == 2)
+            {
+                BankerDashboard c1 = new BankerDashboard(a1.AccountNumber);
+                c1.Show();
+                this.Hide();
+            }
+            else if (a1.AccountType == 3)
+            {
+                
+                CompanyHome c1 = new CompanyHome();
+                c1.Show();
+                this.Hide();
+                
             }
             reader.Close();
             conn.Close();
