@@ -289,6 +289,8 @@ namespace BankingManagementSystem {
             
             private global::System.Data.DataColumn columntxn_amt;
             
+            private global::System.Data.DataColumn columnAC_NO;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public TransactionsDataTable() {
@@ -359,6 +361,14 @@ namespace BankingManagementSystem {
             public global::System.Data.DataColumn txn_amtColumn {
                 get {
                     return this.columntxn_amt;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public global::System.Data.DataColumn AC_NOColumn {
+                get {
+                    return this.columnAC_NO;
                 }
             }
             
@@ -663,6 +673,17 @@ namespace BankingManagementSystem {
                     this[this.tableTransactions.txn_amtColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public int AC_NO {
+                get {
+                    return ((int)(this[this.tableServices.AC_NOColumn]));
+                }
+                set {
+                    this[this.tableServices.AC_NOColumn] = value;
+                }
+            }
         }
         
         /// <summary>
@@ -957,7 +978,7 @@ SELECT txn_id, txn_from, txn_to, txn_date, txn_amt FROM Transactions WHERE (txn_
                     this.Adapter.DeleteCommand.Connection.Close();
                 }
             }
-        }
+            }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
@@ -997,8 +1018,8 @@ SELECT txn_id, txn_from, txn_to, txn_date, txn_amt FROM Transactions WHERE (txn_
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
+                }
             }
-        }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]

@@ -33,5 +33,16 @@ namespace BankingManagementSystem.Properties {
                 return ((string)(this["ABMSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SUMAIYA\\SQLEXPRESS;Initial Catalog=ABMS;Integrated Security=True;Trus" +
+            "tServerCertificate=True")]
+        public string SumuConnectionString {
+            get {
+                return ((string)(this["SumuConnectionString"]));
+            }
+        }
     }
 }
