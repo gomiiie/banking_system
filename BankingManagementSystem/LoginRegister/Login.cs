@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankingManagementSystem.LoginRegister;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -116,7 +117,9 @@ namespace BankingManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("To reset your password, please contact our head office at Kuratoli, Dhaka.");
+            this.Close();
+            ForgetPassword f1 = new ForgetPassword();
+            f1.Show();
         }
 
 

@@ -363,6 +363,12 @@
     <Compile Include="CompanyTransactions.Designer.cs">
       <DependentUpon>CompanyTransactions.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginRegister\ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginRegister\ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginRegister\RegChoose.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -481,6 +487,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CompanyTransactions.resx">
       <DependentUpon>CompanyTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginRegister\ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginRegister\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
