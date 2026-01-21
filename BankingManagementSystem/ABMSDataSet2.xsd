@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ABMSDataSet2" targetNamespace="http://tempuri.org/ABMSDataSet2.xsd" xmlns:mstns="http://tempuri.org/ABMSDataSet2.xsd" xmlns="http://tempuri.org/ABMSDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ABMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ABMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BankingManagementSystem.Properties.Settings.GlobalReference.Default.ABMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AllAccountDetailsTableAdapter" GeneratorDataComponentClassName="AllAccountDetailsTableAdapter" Name="AllAccountDetails" UserDataComponentName="AllAccountDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ABMSConnectionString (Settings)" DbObjectName="ABMS.dbo.AllAccountDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AC_NO, name, balance, number FROM dbo.AllAccountDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AC_NO" DataSetColumn="AC_NO" />
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="balance" DataSetColumn="balance" />
+              <Mapping SourceColumn="number" DataSetColumn="number" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ABMSDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ABMSDataSet2" msprop:Generator_DataSetName="ABMSDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AllAccountDetails" msprop:Generator_RowEvHandlerName="AllAccountDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="AllAccountDetailsRowDeleted" msprop:Generator_RowDeletingName="AllAccountDetailsRowDeleting" msprop:Generator_RowEvArgName="AllAccountDetailsRowChangeEvent" msprop:Generator_TablePropName="AllAccountDetails" msprop:Generator_RowChangedName="AllAccountDetailsRowChanged" msprop:Generator_RowChangingName="AllAccountDetailsRowChanging" msprop:Generator_TableClassName="AllAccountDetailsDataTable" msprop:Generator_RowClassName="AllAccountDetailsRow" msprop:Generator_TableVarName="tableAllAccountDetails" msprop:Generator_UserTableName="AllAccountDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AC_NO" msprop:Generator_ColumnPropNameInRow="AC_NO" msprop:Generator_ColumnPropNameInTable="AC_NOColumn" msprop:Generator_ColumnVarNameInTable="columnAC_NO" msprop:Generator_UserColumnName="AC_NO" type="xs:int" />
+              <xs:element name="name" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="balance" msprop:Generator_ColumnPropNameInRow="balance" msprop:Generator_ColumnPropNameInTable="balanceColumn" msprop:Generator_ColumnVarNameInTable="columnbalance" msprop:Generator_UserColumnName="balance" type="xs:decimal" />
+              <xs:element name="number" msprop:Generator_ColumnPropNameInRow="number" msprop:Generator_ColumnPropNameInTable="numberColumn" msprop:Generator_ColumnVarNameInTable="columnnumber" msprop:Generator_UserColumnName="number" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:AllAccountDetails" />
+      <xs:field xpath="mstns:AC_NO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

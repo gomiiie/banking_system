@@ -71,22 +71,50 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ABMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ABMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ABMSLoanTypes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
     </Compile>
-    <Compile Include="BankerDashboard.cs">
+    <Compile Include="Banker\BankerClients.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BankerDashboard.Designer.cs">
+    <Compile Include="Banker\BankerClients.Designer.cs">
+      <DependentUpon>BankerClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerCTXN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerCTXN.Designer.cs">
+      <DependentUpon>BankerCTXN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerDashboard.Designer.cs">
       <DependentUpon>BankerDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="BankerSideBar.cs">
+    <Compile Include="Banker\BankerSideBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BankerSideBar.Designer.cs">
+    <Compile Include="Banker\BankerSideBar.Designer.cs">
       <DependentUpon>BankerSideBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerTransactions.Designer.cs">
+      <DependentUpon>BankerTransactions.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Client\BuyService.cs">
@@ -211,11 +239,20 @@
     <Compile Include="Client\WithdrawWindow.Designer.cs">
       <DependentUpon>WithdrawWindow.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BankerDashboard.resx">
+    <EmbeddedResource Include="Banker\BankerClients.resx">
+      <DependentUpon>BankerClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerCTXN.resx">
+      <DependentUpon>BankerCTXN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerDashboard.resx">
       <DependentUpon>BankerDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BankerSideBar.resx">
+    <EmbeddedResource Include="Banker\BankerSideBar.resx">
       <DependentUpon>BankerSideBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerTransactions.resx">
+      <DependentUpon>BankerTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\BuyService.resx">
       <DependentUpon>BuyService.cs</DependentUpon>
@@ -330,6 +367,28 @@
     </None>
     <None Include="ABMSDataSet1.xss">
       <DependentUpon>ABMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet2.xsc">
+      <DependentUpon>ABMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet2.xss">
+      <DependentUpon>ABMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet3.xsc">
+      <DependentUpon>ABMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet3.xss">
+      <DependentUpon>ABMSDataSet3.xsd</DependentUpon>
     </None>
     <None Include="ABMSLoanTypes.xsc">
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>

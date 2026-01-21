@@ -12,6 +12,8 @@ namespace BankingManagementSystem
 {
     public partial class BankerSideBar : UserControl
     {
+
+
         public BankerSideBar()
         {
             InitializeComponent();
@@ -25,6 +27,13 @@ namespace BankingManagementSystem
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTxn_Click(object sender, EventArgs e)
+        {
+            BankerClients bc = new BankerClients();
+            bc.Show();
+            this.FindForm().Hide();
         }
     }
 }
