@@ -37,9 +37,9 @@
             this.sls = new System.Windows.Forms.Button();
             this.service = new System.Windows.Forms.Button();
             this.trns1 = new System.Windows.Forms.Button();
-            this.aBMSDataSet6 = new BankingManagementSystem.ABMSDataSet6();
+            //this.aBMSDataSet6 = new BankingManagementSystem.ABMSDataSet6();
             this.transactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.transactionsTableAdapter = new BankingManagementSystem.ABMSDataSet6TableAdapters.TransactionsTableAdapter();
+            //this.transactionsTableAdapter = new BankingManagementSystem.ABMSDataSet6TableAdapters.TransactionsTableAdapter();
             this.txnidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txnfromDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txntoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,8 +49,8 @@
             this.lidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet6)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -156,17 +156,17 @@
             // 
             // aBMSDataSet6
             // 
-            this.aBMSDataSet6.DataSetName = "ABMSDataSet6";
-            this.aBMSDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.aBMSDataSet6.DataSetName = "ABMSDataSet6";
+            //this.aBMSDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // transactionsBindingSource
             // 
             this.transactionsBindingSource.DataMember = "Transactions";
-            this.transactionsBindingSource.DataSource = this.aBMSDataSet6;
+            //this.transactionsBindingSource.DataSource = this.aBMSDataSet6;
             // 
             // transactionsTableAdapter
             // 
-            this.transactionsTableAdapter.ClearBeforeFill = true;
+            //this.transactionsTableAdapter.ClearBeforeFill = true;
             // 
             // txnidDataGridViewTextBoxColumn
             // 
@@ -233,7 +233,7 @@
             this.Load += new System.EventHandler(this.CompanyTransactions1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet6)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -250,9 +250,9 @@
         private System.Windows.Forms.Button sls;
         private System.Windows.Forms.Button service;
         private System.Windows.Forms.Button trns1;
-        private ABMSDataSet6 aBMSDataSet6;
+        //private ABMSDataSet6 aBMSDataSet6;
         private System.Windows.Forms.BindingSource transactionsBindingSource;
-        private ABMSDataSet6TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
+        //private ABMSDataSet6TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnfromDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txntoDataGridViewTextBoxColumn;

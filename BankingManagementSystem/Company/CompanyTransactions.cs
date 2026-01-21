@@ -13,13 +13,13 @@ namespace BankingManagementSystem
 {
     public partial class CompanyTransactions : Form
     {
-        private string AC_NO;
+        private string AC_NO = 3001.ToString();
         public CompanyTransactions()
         {
             InitializeComponent();
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CQ6UGDS\SQLEXPRESS01;Initial Catalog=ABMS;Integrated Security=True;");
             conn.Open();
-            string query = $"SELECT txn_id, txn_from, txn_to, txn_date, txn_amt, txn_type, txn_l_id FROM Transactions WHERE txn_from = {AC_NO} OR txn_to = {AC_NO};";
+            string query = $"SELECT txn_id, txn_from, txn_to, txn_date, txn_amt, txn_type, l_id FROM Transactions WHERE txn_from = {AC_NO} OR txn_to = {AC_NO};";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();

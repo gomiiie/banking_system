@@ -215,6 +215,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ABMSDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet61.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ABMSLoanTypes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -339,28 +344,34 @@
     <Compile Include="Client\MobileRecharge.Designer.cs">
       <DependentUpon>MobileRecharge.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompanySales.cs">
+    <Compile Include="Company\CompanyEditProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CompanySales.Designer.cs">
-      <DependentUpon>CompanySales.cs</DependentUpon>
+    <Compile Include="Company\CompanyEditProfile.Designer.cs">
+      <DependentUpon>CompanyEditProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompanyServces.cs">
+    <Compile Include="Company\CompanyHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CompanyServces.Designer.cs">
-      <DependentUpon>CompanyServces.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CompanyHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompanyHome.Designer.cs">
+    <Compile Include="Company\CompanyHome.Designer.cs">
       <DependentUpon>CompanyHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompanyTransactions.cs">
+    <Compile Include="Company\CompanyProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CompanyTransactions.Designer.cs">
+    <Compile Include="Company\CompanyProfile.Designer.cs">
+      <DependentUpon>CompanyProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyServces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyServces.Designer.cs">
+      <DependentUpon>CompanyServces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyTransactions.Designer.cs">
       <DependentUpon>CompanyTransactions.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginRegister\ForgetPassword.cs">
@@ -476,16 +487,19 @@
     <EmbeddedResource Include="Client\DepositWindow.resx">
       <DependentUpon>DepositWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompanySales.resx">
-      <DependentUpon>CompanySales.cs</DependentUpon>
+    <EmbeddedResource Include="Company\CompanyEditProfile.resx">
+      <DependentUpon>CompanyEditProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompanyServces.resx">
-      <DependentUpon>CompanyServces.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CompanyHome.resx">
+    <EmbeddedResource Include="Company\CompanyHome.resx">
       <DependentUpon>CompanyHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompanyTransactions.resx">
+    <EmbeddedResource Include="Company\CompanyProfile.resx">
+      <DependentUpon>CompanyProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyServces.resx">
+      <DependentUpon>CompanyServces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Company\CompanyTransactions.resx">
       <DependentUpon>CompanyTransactions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginRegister\ForgetPassword.resx">
@@ -618,6 +632,17 @@
     </None>
     <None Include="ABMSDataSet5.xss">
       <DependentUpon>ABMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet61.xsc">
+      <DependentUpon>ABMSDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet61.xss">
+      <DependentUpon>ABMSDataSet61.xsd</DependentUpon>
     </None>
     <None Include="ABMSLoanTypes.xsc">
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
