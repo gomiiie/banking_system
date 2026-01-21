@@ -20,17 +20,17 @@ namespace BankingManagementSystem {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("ABMSDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("ABMSDataSet4")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class ABMSDataSet1 : global::System.Data.DataSet {
+    public partial class ABMSDataSet4 : global::System.Data.DataSet {
         
-        private LoanTypesDataTable tableLoanTypes;
+        private PendingLoansDataTable tablePendingLoans;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public ABMSDataSet1() {
+        public ABMSDataSet4() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace BankingManagementSystem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        protected ABMSDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected ABMSDataSet4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace BankingManagementSystem {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["LoanTypes"] != null)) {
-                    base.Tables.Add(new LoanTypesDataTable(ds.Tables["LoanTypes"]));
+                if ((ds.Tables["PendingLoans"] != null)) {
+                    base.Tables.Add(new PendingLoansDataTable(ds.Tables["PendingLoans"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace BankingManagementSystem {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public LoanTypesDataTable LoanTypes {
+        public PendingLoansDataTable PendingLoans {
             get {
-                return this.tableLoanTypes;
+                return this.tablePendingLoans;
             }
         }
         
@@ -127,7 +127,7 @@ namespace BankingManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            ABMSDataSet1 cln = ((ABMSDataSet1)(base.Clone()));
+            ABMSDataSet4 cln = ((ABMSDataSet4)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace BankingManagementSystem {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["LoanTypes"] != null)) {
-                    base.Tables.Add(new LoanTypesDataTable(ds.Tables["LoanTypes"]));
+                if ((ds.Tables["PendingLoans"] != null)) {
+                    base.Tables.Add(new PendingLoansDataTable(ds.Tables["PendingLoans"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace BankingManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableLoanTypes = ((LoanTypesDataTable)(base.Tables["LoanTypes"]));
+            this.tablePendingLoans = ((PendingLoansDataTable)(base.Tables["PendingLoans"]));
             if ((initTable == true)) {
-                if ((this.tableLoanTypes != null)) {
-                    this.tableLoanTypes.InitVars();
+                if ((this.tablePendingLoans != null)) {
+                    this.tablePendingLoans.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace BankingManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "ABMSDataSet1";
+            this.DataSetName = "ABMSDataSet4";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/ABMSDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/ABMSDataSet4.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableLoanTypes = new LoanTypesDataTable();
-            base.Tables.Add(this.tableLoanTypes);
+            this.tablePendingLoans = new PendingLoansDataTable();
+            base.Tables.Add(this.tablePendingLoans);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private bool ShouldSerializeLoanTypes() {
+        private bool ShouldSerializePendingLoans() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace BankingManagementSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            ABMSDataSet1 ds = new ABMSDataSet1();
+            ABMSDataSet4 ds = new ABMSDataSet4();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,16 +270,16 @@ namespace BankingManagementSystem {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public delegate void LoanTypesRowChangeEventHandler(object sender, LoanTypesRowChangeEvent e);
+        public delegate void PendingLoansRowChangeEventHandler(object sender, PendingLoansRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class LoanTypesDataTable : global::System.Data.TypedTableBase<LoanTypesRow> {
+        public partial class PendingLoansDataTable : global::System.Data.TypedTableBase<PendingLoansRow> {
             
-            private global::System.Data.DataColumn columnlt_id;
+            private global::System.Data.DataColumn columnl_id;
             
             private global::System.Data.DataColumn columnlt_name;
             
@@ -287,16 +287,20 @@ namespace BankingManagementSystem {
             
             private global::System.Data.DataColumn columnlt_status;
             
-            private global::System.Data.DataColumn columnlt_date_added;
-            
-            private global::System.Data.DataColumn columnlastedit_by;
-            
             private global::System.Data.DataColumn columnlt_duration;
+            
+            private global::System.Data.DataColumn columntotal_bal;
+            
+            private global::System.Data.DataColumn columnl_status;
+            
+            private global::System.Data.DataColumn columnl_date_taken;
+            
+            private global::System.Data.DataColumn columnAC_NO;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesDataTable() {
-                this.TableName = "LoanTypes";
+            public PendingLoansDataTable() {
+                this.TableName = "PendingLoans";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -304,7 +308,7 @@ namespace BankingManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            internal LoanTypesDataTable(global::System.Data.DataTable table) {
+            internal PendingLoansDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -321,16 +325,16 @@ namespace BankingManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            protected LoanTypesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected PendingLoansDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn lt_idColumn {
+            public global::System.Data.DataColumn l_idColumn {
                 get {
-                    return this.columnlt_id;
+                    return this.columnl_id;
                 }
             }
             
@@ -360,25 +364,41 @@ namespace BankingManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn lt_date_addedColumn {
-                get {
-                    return this.columnlt_date_added;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn lastedit_byColumn {
-                get {
-                    return this.columnlastedit_by;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public global::System.Data.DataColumn lt_durationColumn {
                 get {
                     return this.columnlt_duration;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public global::System.Data.DataColumn total_balColumn {
+                get {
+                    return this.columntotal_bal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public global::System.Data.DataColumn l_statusColumn {
+                get {
+                    return this.columnl_status;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public global::System.Data.DataColumn l_date_takenColumn {
+                get {
+                    return this.columnl_date_taken;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public global::System.Data.DataColumn AC_NOColumn {
+                get {
+                    return this.columnAC_NO;
                 }
             }
             
@@ -393,58 +413,60 @@ namespace BankingManagementSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesRow this[int index] {
+            public PendingLoansRow this[int index] {
                 get {
-                    return ((LoanTypesRow)(this.Rows[index]));
+                    return ((PendingLoansRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event LoanTypesRowChangeEventHandler LoanTypesRowChanging;
+            public event PendingLoansRowChangeEventHandler PendingLoansRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event LoanTypesRowChangeEventHandler LoanTypesRowChanged;
+            public event PendingLoansRowChangeEventHandler PendingLoansRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event LoanTypesRowChangeEventHandler LoanTypesRowDeleting;
+            public event PendingLoansRowChangeEventHandler PendingLoansRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public event LoanTypesRowChangeEventHandler LoanTypesRowDeleted;
+            public event PendingLoansRowChangeEventHandler PendingLoansRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void AddLoanTypesRow(LoanTypesRow row) {
+            public void AddPendingLoansRow(PendingLoansRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesRow AddLoanTypesRow(string lt_name, decimal lt_interest, string lt_status, System.DateTime lt_date_added, int lastedit_by, byte lt_duration) {
-                LoanTypesRow rowLoanTypesRow = ((LoanTypesRow)(this.NewRow()));
+            public PendingLoansRow AddPendingLoansRow(int l_id, string lt_name, decimal lt_interest, string lt_status, byte lt_duration, decimal total_bal, string l_status, System.DateTime l_date_taken, int AC_NO) {
+                PendingLoansRow rowPendingLoansRow = ((PendingLoansRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
+                        l_id,
                         lt_name,
                         lt_interest,
                         lt_status,
-                        lt_date_added,
-                        lastedit_by,
-                        lt_duration};
-                rowLoanTypesRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowLoanTypesRow);
-                return rowLoanTypesRow;
+                        lt_duration,
+                        total_bal,
+                        l_status,
+                        l_date_taken,
+                        AC_NO};
+                rowPendingLoansRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPendingLoansRow);
+                return rowPendingLoansRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesRow FindBylt_id(int lt_id) {
-                return ((LoanTypesRow)(this.Rows.Find(new object[] {
-                            lt_id})));
+            public PendingLoansRow FindByl_id(int l_id) {
+                return ((PendingLoansRow)(this.Rows.Find(new object[] {
+                            l_id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                LoanTypesDataTable cln = ((LoanTypesDataTable)(base.Clone()));
+                PendingLoansDataTable cln = ((PendingLoansDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -452,80 +474,85 @@ namespace BankingManagementSystem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new LoanTypesDataTable();
+                return new PendingLoansDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             internal void InitVars() {
-                this.columnlt_id = base.Columns["lt_id"];
+                this.columnl_id = base.Columns["l_id"];
                 this.columnlt_name = base.Columns["lt_name"];
                 this.columnlt_interest = base.Columns["lt_interest"];
                 this.columnlt_status = base.Columns["lt_status"];
-                this.columnlt_date_added = base.Columns["lt_date_added"];
-                this.columnlastedit_by = base.Columns["lastedit_by"];
                 this.columnlt_duration = base.Columns["lt_duration"];
+                this.columntotal_bal = base.Columns["total_bal"];
+                this.columnl_status = base.Columns["l_status"];
+                this.columnl_date_taken = base.Columns["l_date_taken"];
+                this.columnAC_NO = base.Columns["AC_NO"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             private void InitClass() {
-                this.columnlt_id = new global::System.Data.DataColumn("lt_id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlt_id);
+                this.columnl_id = new global::System.Data.DataColumn("l_id", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnl_id);
                 this.columnlt_name = new global::System.Data.DataColumn("lt_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlt_name);
                 this.columnlt_interest = new global::System.Data.DataColumn("lt_interest", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlt_interest);
                 this.columnlt_status = new global::System.Data.DataColumn("lt_status", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlt_status);
-                this.columnlt_date_added = new global::System.Data.DataColumn("lt_date_added", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlt_date_added);
-                this.columnlastedit_by = new global::System.Data.DataColumn("lastedit_by", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlastedit_by);
                 this.columnlt_duration = new global::System.Data.DataColumn("lt_duration", typeof(byte), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlt_duration);
+                this.columntotal_bal = new global::System.Data.DataColumn("total_bal", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotal_bal);
+                this.columnl_status = new global::System.Data.DataColumn("l_status", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnl_status);
+                this.columnl_date_taken = new global::System.Data.DataColumn("l_date_taken", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnl_date_taken);
+                this.columnAC_NO = new global::System.Data.DataColumn("AC_NO", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAC_NO);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnlt_id}, true));
-                this.columnlt_id.AutoIncrement = true;
-                this.columnlt_id.AutoIncrementSeed = -1;
-                this.columnlt_id.AutoIncrementStep = -1;
-                this.columnlt_id.AllowDBNull = false;
-                this.columnlt_id.ReadOnly = true;
-                this.columnlt_id.Unique = true;
+                                this.columnl_id}, true));
+                this.columnl_id.AllowDBNull = false;
+                this.columnl_id.Unique = true;
                 this.columnlt_name.AllowDBNull = false;
                 this.columnlt_name.MaxLength = 50;
                 this.columnlt_interest.AllowDBNull = false;
                 this.columnlt_status.AllowDBNull = false;
                 this.columnlt_status.MaxLength = 30;
-                this.columnlt_date_added.AllowDBNull = false;
-                this.columnlastedit_by.AllowDBNull = false;
                 this.columnlt_duration.AllowDBNull = false;
+                this.columntotal_bal.AllowDBNull = false;
+                this.columnl_status.AllowDBNull = false;
+                this.columnl_status.MaxLength = 30;
+                this.columnl_date_taken.AllowDBNull = false;
+                this.columnAC_NO.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesRow NewLoanTypesRow() {
-                return ((LoanTypesRow)(this.NewRow()));
+            public PendingLoansRow NewPendingLoansRow() {
+                return ((PendingLoansRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new LoanTypesRow(builder);
+                return new PendingLoansRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(LoanTypesRow);
+                return typeof(PendingLoansRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.LoanTypesRowChanged != null)) {
-                    this.LoanTypesRowChanged(this, new LoanTypesRowChangeEvent(((LoanTypesRow)(e.Row)), e.Action));
+                if ((this.PendingLoansRowChanged != null)) {
+                    this.PendingLoansRowChanged(this, new PendingLoansRowChangeEvent(((PendingLoansRow)(e.Row)), e.Action));
                 }
             }
             
@@ -533,8 +560,8 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.LoanTypesRowChanging != null)) {
-                    this.LoanTypesRowChanging(this, new LoanTypesRowChangeEvent(((LoanTypesRow)(e.Row)), e.Action));
+                if ((this.PendingLoansRowChanging != null)) {
+                    this.PendingLoansRowChanging(this, new PendingLoansRowChangeEvent(((PendingLoansRow)(e.Row)), e.Action));
                 }
             }
             
@@ -542,8 +569,8 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.LoanTypesRowDeleted != null)) {
-                    this.LoanTypesRowDeleted(this, new LoanTypesRowChangeEvent(((LoanTypesRow)(e.Row)), e.Action));
+                if ((this.PendingLoansRowDeleted != null)) {
+                    this.PendingLoansRowDeleted(this, new PendingLoansRowChangeEvent(((PendingLoansRow)(e.Row)), e.Action));
                 }
             }
             
@@ -551,14 +578,14 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.LoanTypesRowDeleting != null)) {
-                    this.LoanTypesRowDeleting(this, new LoanTypesRowChangeEvent(((LoanTypesRow)(e.Row)), e.Action));
+                if ((this.PendingLoansRowDeleting != null)) {
+                    this.PendingLoansRowDeleting(this, new PendingLoansRowChangeEvent(((PendingLoansRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void RemoveLoanTypesRow(LoanTypesRow row) {
+            public void RemovePendingLoansRow(PendingLoansRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -567,7 +594,7 @@ namespace BankingManagementSystem {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                ABMSDataSet1 ds = new ABMSDataSet1();
+                ABMSDataSet4 ds = new ABMSDataSet4();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -585,7 +612,7 @@ namespace BankingManagementSystem {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "LoanTypesDataTable";
+                attribute2.FixedValue = "PendingLoansDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -629,25 +656,25 @@ namespace BankingManagementSystem {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class LoanTypesRow : global::System.Data.DataRow {
+        public partial class PendingLoansRow : global::System.Data.DataRow {
             
-            private LoanTypesDataTable tableLoanTypes;
+            private PendingLoansDataTable tablePendingLoans;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            internal LoanTypesRow(global::System.Data.DataRowBuilder rb) : 
+            internal PendingLoansRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableLoanTypes = ((LoanTypesDataTable)(this.Table));
+                this.tablePendingLoans = ((PendingLoansDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public int lt_id {
+            public int l_id {
                 get {
-                    return ((int)(this[this.tableLoanTypes.lt_idColumn]));
+                    return ((int)(this[this.tablePendingLoans.l_idColumn]));
                 }
                 set {
-                    this[this.tableLoanTypes.lt_idColumn] = value;
+                    this[this.tablePendingLoans.l_idColumn] = value;
                 }
             }
             
@@ -655,10 +682,10 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public string lt_name {
                 get {
-                    return ((string)(this[this.tableLoanTypes.lt_nameColumn]));
+                    return ((string)(this[this.tablePendingLoans.lt_nameColumn]));
                 }
                 set {
-                    this[this.tableLoanTypes.lt_nameColumn] = value;
+                    this[this.tablePendingLoans.lt_nameColumn] = value;
                 }
             }
             
@@ -666,10 +693,10 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public decimal lt_interest {
                 get {
-                    return ((decimal)(this[this.tableLoanTypes.lt_interestColumn]));
+                    return ((decimal)(this[this.tablePendingLoans.lt_interestColumn]));
                 }
                 set {
-                    this[this.tableLoanTypes.lt_interestColumn] = value;
+                    this[this.tablePendingLoans.lt_interestColumn] = value;
                 }
             }
             
@@ -677,32 +704,10 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public string lt_status {
                 get {
-                    return ((string)(this[this.tableLoanTypes.lt_statusColumn]));
+                    return ((string)(this[this.tablePendingLoans.lt_statusColumn]));
                 }
                 set {
-                    this[this.tableLoanTypes.lt_statusColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public System.DateTime lt_date_added {
-                get {
-                    return ((global::System.DateTime)(this[this.tableLoanTypes.lt_date_addedColumn]));
-                }
-                set {
-                    this[this.tableLoanTypes.lt_date_addedColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public int lastedit_by {
-                get {
-                    return ((int)(this[this.tableLoanTypes.lastedit_byColumn]));
-                }
-                set {
-                    this[this.tableLoanTypes.lastedit_byColumn] = value;
+                    this[this.tablePendingLoans.lt_statusColumn] = value;
                 }
             }
             
@@ -710,10 +715,54 @@ namespace BankingManagementSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
             public byte lt_duration {
                 get {
-                    return ((byte)(this[this.tableLoanTypes.lt_durationColumn]));
+                    return ((byte)(this[this.tablePendingLoans.lt_durationColumn]));
                 }
                 set {
-                    this[this.tableLoanTypes.lt_durationColumn] = value;
+                    this[this.tablePendingLoans.lt_durationColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public decimal total_bal {
+                get {
+                    return ((decimal)(this[this.tablePendingLoans.total_balColumn]));
+                }
+                set {
+                    this[this.tablePendingLoans.total_balColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public string l_status {
+                get {
+                    return ((string)(this[this.tablePendingLoans.l_statusColumn]));
+                }
+                set {
+                    this[this.tablePendingLoans.l_statusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public System.DateTime l_date_taken {
+                get {
+                    return ((global::System.DateTime)(this[this.tablePendingLoans.l_date_takenColumn]));
+                }
+                set {
+                    this[this.tablePendingLoans.l_date_takenColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
+            public int AC_NO {
+                get {
+                    return ((int)(this[this.tablePendingLoans.AC_NOColumn]));
+                }
+                set {
+                    this[this.tablePendingLoans.AC_NOColumn] = value;
                 }
             }
         }
@@ -722,22 +771,22 @@ namespace BankingManagementSystem {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public class LoanTypesRowChangeEvent : global::System.EventArgs {
+        public class PendingLoansRowChangeEvent : global::System.EventArgs {
             
-            private LoanTypesRow eventRow;
+            private PendingLoansRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesRowChangeEvent(LoanTypesRow row, global::System.Data.DataRowAction action) {
+            public PendingLoansRowChangeEvent(PendingLoansRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public LoanTypesRow Row {
+            public PendingLoansRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -753,7 +802,7 @@ namespace BankingManagementSystem {
         }
     }
 }
-namespace BankingManagementSystem.ABMSDataSet1TableAdapters {
+namespace BankingManagementSystem.ABMSDataSet4TableAdapters {
     
     
     /// <summary>
@@ -765,7 +814,7 @@ namespace BankingManagementSystem.ABMSDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class LoanTypesTableAdapter : global::System.ComponentModel.Component {
+    public partial class PendingLoansTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -779,7 +828,7 @@ namespace BankingManagementSystem.ABMSDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public LoanTypesTableAdapter() {
+        public PendingLoansTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -876,45 +925,17 @@ namespace BankingManagementSystem.ABMSDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "LoanTypes";
-            tableMapping.ColumnMappings.Add("lt_id", "lt_id");
+            tableMapping.DataSetTable = "PendingLoans";
+            tableMapping.ColumnMappings.Add("l_id", "l_id");
             tableMapping.ColumnMappings.Add("lt_name", "lt_name");
             tableMapping.ColumnMappings.Add("lt_interest", "lt_interest");
             tableMapping.ColumnMappings.Add("lt_status", "lt_status");
-            tableMapping.ColumnMappings.Add("lt_date_added", "lt_date_added");
-            tableMapping.ColumnMappings.Add("lastedit_by", "lastedit_by");
             tableMapping.ColumnMappings.Add("lt_duration", "lt_duration");
+            tableMapping.ColumnMappings.Add("total_bal", "total_bal");
+            tableMapping.ColumnMappings.Add("l_status", "l_status");
+            tableMapping.ColumnMappings.Add("l_date_taken", "l_date_taken");
+            tableMapping.ColumnMappings.Add("AC_NO", "AC_NO");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[LoanTypes] WHERE (([lt_id] = @Original_lt_id) AND ([lt_name] = @Original_lt_name) AND ([lt_interest] = @Original_lt_interest) AND ([lt_status] = @Original_lt_status) AND ([lt_date_added] = @Original_lt_date_added) AND ([lastedit_by] = @Original_lastedit_by) AND ([lt_duration] = @Original_lt_duration))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_interest", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 3, "lt_interest", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_date_added", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_date_added", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lastedit_by", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lastedit_by", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_duration", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_duration", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[LoanTypes] SET [lt_name] = @lt_name, [lt_interest] = @lt_interest, [lt_status] = @lt_status, [lt_date_added] = @lt_date_added, [lastedit_by] = @lastedit_by, [lt_duration] = @lt_duration WHERE (([lt_id] = @Original_lt_id) AND ([lt_name] = @Original_lt_name) AND ([lt_interest] = @Original_lt_interest) AND ([lt_status] = @Original_lt_status) AND ([lt_date_added] = @Original_lt_date_added) AND ([lastedit_by] = @Original_lastedit_by) AND ([lt_duration] = @Original_lt_duration));
-SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_duration FROM LoanTypes WHERE (lt_id = @lt_id)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lt_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lt_interest", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 3, "lt_interest", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lt_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lt_date_added", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_date_added", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lastedit_by", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lastedit_by", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lt_duration", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_duration", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_interest", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 3, "lt_interest", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_date_added", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_date_added", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lastedit_by", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lastedit_by", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_lt_duration", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "lt_duration", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@lt_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "lt_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -930,8 +951,8 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_dur" +
-                "ation FROM dbo.LoanTypes";
+            this._commandCollection[0].CommandText = "SELECT l_id, lt_name, lt_interest, lt_status, lt_duration, total_bal, l_status, l" +
+                "_date_taken, AC_NO FROM dbo.PendingLoans";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -939,7 +960,7 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ABMSDataSet1.LoanTypesDataTable dataTable) {
+        public virtual int Fill(ABMSDataSet4.PendingLoansDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -952,141 +973,11 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ABMSDataSet1.LoanTypesDataTable GetData() {
+        public virtual ABMSDataSet4.PendingLoansDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ABMSDataSet1.LoanTypesDataTable dataTable = new ABMSDataSet1.LoanTypesDataTable();
+            ABMSDataSet4.PendingLoansDataTable dataTable = new ABMSDataSet4.PendingLoansDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ABMSDataSet1.LoanTypesDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ABMSDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "LoanTypes");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_lt_id, string Original_lt_name, decimal Original_lt_interest, string Original_lt_status, System.DateTime Original_lt_date_added, int Original_lastedit_by, byte Original_lt_duration) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_lt_id));
-            if ((Original_lt_name == null)) {
-                throw new global::System.ArgumentNullException("Original_lt_name");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_lt_name));
-            }
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((decimal)(Original_lt_interest));
-            if ((Original_lt_status == null)) {
-                throw new global::System.ArgumentNullException("Original_lt_status");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_lt_status));
-            }
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_lt_date_added));
-            this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(Original_lastedit_by));
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((byte)(Original_lt_duration));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string lt_name, decimal lt_interest, string lt_status, System.DateTime lt_date_added, int lastedit_by, byte lt_duration, int Original_lt_id, string Original_lt_name, decimal Original_lt_interest, string Original_lt_status, System.DateTime Original_lt_date_added, int Original_lastedit_by, byte Original_lt_duration, int lt_id) {
-            if ((lt_name == null)) {
-                throw new global::System.ArgumentNullException("lt_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(lt_name));
-            }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((decimal)(lt_interest));
-            if ((lt_status == null)) {
-                throw new global::System.ArgumentNullException("lt_status");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(lt_status));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(lt_date_added));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(lastedit_by));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((byte)(lt_duration));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_lt_id));
-            if ((Original_lt_name == null)) {
-                throw new global::System.ArgumentNullException("Original_lt_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_lt_name));
-            }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(Original_lt_interest));
-            if ((Original_lt_status == null)) {
-                throw new global::System.ArgumentNullException("Original_lt_status");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_lt_status));
-            }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_lt_date_added));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_lastedit_by));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((byte)(Original_lt_duration));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(lt_id));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string lt_name, decimal lt_interest, string lt_status, System.DateTime lt_date_added, int lastedit_by, byte lt_duration, int Original_lt_id, string Original_lt_name, decimal Original_lt_interest, string Original_lt_status, System.DateTime Original_lt_date_added, int Original_lastedit_by, byte Original_lt_duration) {
-            return this.Update(lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_duration, Original_lt_id, Original_lt_name, Original_lt_interest, Original_lt_status, Original_lt_date_added, Original_lastedit_by, Original_lt_duration, Original_lt_id);
         }
     }
     
@@ -1102,8 +993,6 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         
         private UpdateOrderOption _updateOrder;
         
-        private LoanTypesTableAdapter _loanTypesTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1116,20 +1005,6 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public LoanTypesTableAdapter LoanTypesTableAdapter {
-            get {
-                return this._loanTypesTableAdapter;
-            }
-            set {
-                this._loanTypesTableAdapter = value;
             }
         }
         
@@ -1152,10 +1027,6 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._loanTypesTableAdapter != null) 
-                            && (this._loanTypesTableAdapter.Connection != null))) {
-                    return this._loanTypesTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1169,9 +1040,6 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._loanTypesTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1181,17 +1049,8 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private int UpdateUpdatedRows(ABMSDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(ABMSDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._loanTypesTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.LoanTypes.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._loanTypesTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1200,16 +1059,8 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private int UpdateInsertedRows(ABMSDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(ABMSDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._loanTypesTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.LoanTypes.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._loanTypesTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1218,16 +1069,8 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        private int UpdateDeletedRows(ABMSDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(ABMSDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._loanTypesTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.LoanTypes.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._loanTypesTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1260,17 +1103,12 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-        public virtual int UpdateAll(ABMSDataSet1 dataSet) {
+        public virtual int UpdateAll(ABMSDataSet4 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._loanTypesTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._loanTypesTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1304,15 +1142,6 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._loanTypesTableAdapter != null)) {
-                    revertConnections.Add(this._loanTypesTableAdapter, this._loanTypesTableAdapter.Connection);
-                    this._loanTypesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._loanTypesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._loanTypesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._loanTypesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._loanTypesTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1370,10 +1199,6 @@ SELECT lt_id, lt_name, lt_interest, lt_status, lt_date_added, lastedit_by, lt_du
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._loanTypesTableAdapter != null)) {
-                    this._loanTypesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._loanTypesTableAdapter]));
-                    this._loanTypesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

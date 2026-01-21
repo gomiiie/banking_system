@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnEnter = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,13 +48,26 @@
             this.btnEnter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnter.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEnter.Location = new System.Drawing.Point(242, 346);
+            this.btnEnter.Location = new System.Drawing.Point(142, 349);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(154, 82);
             this.btnEnter.TabIndex = 1;
-            this.btnEnter.Text = "ENTER";
+            this.btnEnter.Text = "Company";
             this.btnEnter.UseVisualStyleBackColor = false;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(323, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(154, 82);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Login";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Welcome
             // 
@@ -61,6 +75,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(642, 651);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.label1);
             this.Name = "Welcome";
@@ -74,6 +89,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEnter;
+        private System.Windows.Forms.Button button1;
     }
 }
 

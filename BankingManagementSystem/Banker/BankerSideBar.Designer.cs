@@ -54,7 +54,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(177, 839);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(173, 839);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // panel1
@@ -93,6 +93,7 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnTxn
             // 
@@ -146,6 +147,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
@@ -173,6 +175,7 @@
             this.btnLogout.Text = "   Logout        ";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // BankerSideBar
             // 
@@ -181,6 +184,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "BankerSideBar";
             this.Size = new System.Drawing.Size(173, 839);
+            this.Load += new System.EventHandler(this.BankerSideBar_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

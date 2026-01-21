@@ -1,6 +1,6 @@
 ﻿namespace BankingManagementSystem.Banker
 {
-    partial class BankerCTXN
+    partial class BankerCOTXN
     {
         /// <summary>
         /// Required designer variable.
@@ -102,7 +102,7 @@
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1014, 583);
-            this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.TabIndex = 17;
             // 
             // txnidDataGridViewTextBoxColumn
             // 
@@ -178,16 +178,14 @@
             // 
             this.transactionsTableAdapter.ClearBeforeFill = true;
             // 
-            // BankerCTXN
+            // BankerCOTXN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1014, 583);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "BankerCTXN";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BankerCTXN";
-            this.Load += new System.EventHandler(this.BankerCTXN_Load);
+            this.Name = "BankerCOTXN";
+            this.Text = "BankerCOTXN";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet3)).EndInit();
@@ -200,11 +198,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource aBMSClientTransactionsBindingSource;
-        private ABMSClientTransactions aBMSClientTransactions;
-        private ABMSDataSet3 aBMSDataSet3;
-        private System.Windows.Forms.BindingSource transactionsBindingSource;
-        private ABMSDataSet3TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txnfromDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txntoDataGridViewTextBoxColumn;
@@ -212,5 +205,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn txnamtDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn txntypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource transactionsBindingSource;
+        private ABMSDataSet3 aBMSDataSet3;
+        private ABMSClientTransactions aBMSClientTransactions;
+        private System.Windows.Forms.BindingSource aBMSClientTransactionsBindingSource;
+        private ABMSDataSet3TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
     }
 }

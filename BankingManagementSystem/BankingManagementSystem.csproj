@@ -205,16 +205,45 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ABMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ABMSDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ABMSLoanTypes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerLoanAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerLoanAdd.Designer.cs">
+      <DependentUpon>BankerLoanAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerApproveLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerApproveLoans.Designer.cs">
+      <DependentUpon>BankerApproveLoans.cs</DependentUpon>
     </Compile>
     <Compile Include="Banker\BankerClients.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Banker\BankerClients.Designer.cs">
       <DependentUpon>BankerClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerCompany.Designer.cs">
+      <DependentUpon>BankerCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerCOTXN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerCOTXN.Designer.cs">
+      <DependentUpon>BankerCOTXN.cs</DependentUpon>
     </Compile>
     <Compile Include="Banker\BankerCTXN.cs">
       <SubType>Form</SubType>
@@ -227,6 +256,12 @@
     </Compile>
     <Compile Include="Banker\BankerDashboard.Designer.cs">
       <DependentUpon>BankerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banker\BankerLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banker\BankerLoans.Designer.cs">
+      <DependentUpon>BankerLoans.cs</DependentUpon>
     </Compile>
     <Compile Include="Banker\BankerSideBar.cs">
       <SubType>UserControl</SubType>
@@ -313,22 +348,22 @@
     <Compile Include="CompanyTransactions.Designer.cs">
       <DependentUpon>CompanyTransactions.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegChoose.cs">
+    <Compile Include="LoginRegister\RegChoose.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegChoose.Designer.cs">
+    <Compile Include="LoginRegister\RegChoose.Designer.cs">
       <DependentUpon>RegChoose.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationClient.cs">
+    <Compile Include="LoginRegister\RegistrationClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationClient.Designer.cs">
+    <Compile Include="LoginRegister\RegistrationClient.Designer.cs">
       <DependentUpon>RegistrationClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="LoginRegister\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="LoginRegister\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Client\SendMoney.cs">
@@ -343,16 +378,16 @@
     <Compile Include="Client\TakeLoan.Designer.cs">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationCompany.cs">
+    <Compile Include="LoginRegister\RegistrationCompany.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationCompany.Designer.cs">
+    <Compile Include="LoginRegister\RegistrationCompany.Designer.cs">
       <DependentUpon>RegistrationCompany.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationBanker.cs">
+    <Compile Include="LoginRegister\RegistrationBanker.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistrationBanker.Designer.cs">
+    <Compile Include="LoginRegister\RegistrationBanker.Designer.cs">
       <DependentUpon>RegistrationBanker.cs</DependentUpon>
     </Compile>
     <Compile Include="Welcome.cs">
@@ -369,14 +404,29 @@
     <Compile Include="Client\WithdrawWindow.Designer.cs">
       <DependentUpon>WithdrawWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Banker\BankerLoanAdd.resx">
+      <DependentUpon>BankerLoanAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerApproveLoans.resx">
+      <DependentUpon>BankerApproveLoans.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Banker\BankerClients.resx">
       <DependentUpon>BankerClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerCompany.resx">
+      <DependentUpon>BankerCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerCOTXN.resx">
+      <DependentUpon>BankerCOTXN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banker\BankerCTXN.resx">
       <DependentUpon>BankerCTXN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banker\BankerDashboard.resx">
       <DependentUpon>BankerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banker\BankerLoans.resx">
+      <DependentUpon>BankerLoans.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Banker\BankerSideBar.resx">
       <DependentUpon>BankerSideBar.cs</DependentUpon>
@@ -417,16 +467,16 @@
     <EmbeddedResource Include="CompanyTransactions.resx">
       <DependentUpon>CompanyTransactions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="LoginRegister\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\MobileRecharge.resx">
       <DependentUpon>MobileRecharge.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegChoose.resx">
+    <EmbeddedResource Include="LoginRegister\RegChoose.resx">
       <DependentUpon>RegChoose.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrationClient.resx">
+    <EmbeddedResource Include="LoginRegister\RegistrationClient.resx">
       <DependentUpon>RegistrationClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\SendMoney.resx">
@@ -435,10 +485,10 @@
     <EmbeddedResource Include="Client\TakeLoan.resx">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrationCompany.resx">
+    <EmbeddedResource Include="LoginRegister\RegistrationCompany.resx">
       <DependentUpon>RegistrationCompany.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrationBanker.resx">
+    <EmbeddedResource Include="LoginRegister\RegistrationBanker.resx">
       <DependentUpon>RegistrationBanker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
@@ -522,6 +572,17 @@
     </None>
     <None Include="ABMSDataSet3.xss">
       <DependentUpon>ABMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet4.xsc">
+      <DependentUpon>ABMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ABMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ABMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ABMSDataSet4.xss">
+      <DependentUpon>ABMSDataSet4.xsd</DependentUpon>
     </None>
     <None Include="ABMSLoanTypes.xsc">
       <DependentUpon>ABMSLoanTypes.xsd</DependentUpon>

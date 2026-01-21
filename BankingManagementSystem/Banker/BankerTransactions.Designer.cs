@@ -35,9 +35,9 @@
             this.aBMSClientTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aBMSClientTransactions = new BankingManagementSystem.ABMSClientTransactions();
             this.label1 = new System.Windows.Forms.Label();
-            this.aBMSDataSet1 = new BankingManagementSystem.ABMSDataSet1();
+            //this.aBMSDataSet1 = new BankingManagementSystem.ABMSDataSet1();
             this.transactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.transactionsTableAdapter = new BankingManagementSystem.ABMSDataSet1TableAdapters.TransactionsTableAdapter();
+            //this.transactionsTableAdapter = new BankingManagementSystem.ABMSDataSet1TableAdapters.TransactionsTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -55,7 +55,7 @@
             this.bankerSideBar1 = new BankingManagementSystem.BankerSideBar();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -85,17 +85,17 @@
             // 
             // aBMSDataSet1
             // 
-            this.aBMSDataSet1.DataSetName = "ABMSDataSet1";
-            this.aBMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.aBMSDataSet1.DataSetName = "ABMSDataSet1";
+            //this.aBMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // transactionsBindingSource
             // 
             this.transactionsBindingSource.DataMember = "Transactions";
-            this.transactionsBindingSource.DataSource = this.aBMSDataSet1;
+            //this.transactionsBindingSource.DataSource = this.aBMSDataSet1;
             // 
             // transactionsTableAdapter
             // 
-            this.transactionsTableAdapter.ClearBeforeFill = true;
+            //this.transactionsTableAdapter.ClearBeforeFill = true;
             // 
             // label3
             // 
@@ -277,7 +277,7 @@
             this.Load += new System.EventHandler(this.BankerTransactions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSClientTransactions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transactionsBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -294,9 +294,9 @@
         private System.Windows.Forms.BindingSource aBMSClientTransactionsBindingSource;
         private ABMSClientTransactions aBMSClientTransactions;
         private System.Windows.Forms.Label label1;
-        private ABMSDataSet1 aBMSDataSet1;
+        //private ABMSDataSet1 aBMSDataSet1;
         private System.Windows.Forms.BindingSource transactionsBindingSource;
-        private ABMSDataSet1TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
+        //private ABMSDataSet1TableAdapters.TransactionsTableAdapter transactionsTableAdapter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;

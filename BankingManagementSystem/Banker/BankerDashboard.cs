@@ -20,10 +20,12 @@ namespace BankingManagementSystem
             InitializeComponent();
         }
 
+
         public BankerDashboard(string AC_NO)
         {
             InitializeComponent();
             this.AC_NO = AC_NO;
+            bankerSideBar1.AC_NO = AC_NO;
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CQ6UGDS\SQLEXPRESS01;Initial Catalog=ABMS;Integrated Security=True;");
             conn.Open();
 
@@ -53,6 +55,7 @@ namespace BankingManagementSystem
             dataGridView1.DataSource = dt;
             dataGridView1.AutoGenerateColumns = true;
             conn.Close();
+            dataGridView1.AutoResizeColumns();
 
         }
 
@@ -75,7 +78,7 @@ namespace BankingManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BankerTransactions bt = new BankerTransactions();
+            BankerTransactions bt = new BankerTransactions(AC_NO);
             bt.Show();
             this.Hide();
         }

@@ -37,7 +37,7 @@ namespace BankingManagementSystem.Banker
         private void BankerCTXN_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'aBMSDataSet3.Transactions' table. You can move, or remove it, as needed.
-            this.transactionsTableAdapter.Fill(this.aBMSDataSet3.Transactions);
+            //this.transactionsTableAdapter.Fill(this.aBMSDataSet3.Transactions);
 
         }
     }

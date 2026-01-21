@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ABMSDataSet4" targetNamespace="http://tempuri.org/ABMSDataSet4.xsd" xmlns:mstns="http://tempuri.org/ABMSDataSet4.xsd" xmlns="http://tempuri.org/ABMSDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ABMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ABMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BankingManagementSystem.Properties.Settings.GlobalReference.Default.ABMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PendingLoansTableAdapter" GeneratorDataComponentClassName="PendingLoansTableAdapter" Name="PendingLoans" UserDataComponentName="PendingLoansTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ABMSConnectionString (Settings)" DbObjectName="ABMS.dbo.PendingLoans" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT l_id, lt_name, lt_interest, lt_status, lt_duration, total_bal, l_status, l_date_taken, AC_NO FROM dbo.PendingLoans</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="l_id" DataSetColumn="l_id" />
+              <Mapping SourceColumn="lt_name" DataSetColumn="lt_name" />
+              <Mapping SourceColumn="lt_interest" DataSetColumn="lt_interest" />
+              <Mapping SourceColumn="lt_status" DataSetColumn="lt_status" />
+              <Mapping SourceColumn="lt_duration" DataSetColumn="lt_duration" />
+              <Mapping SourceColumn="total_bal" DataSetColumn="total_bal" />
+              <Mapping SourceColumn="l_status" DataSetColumn="l_status" />
+              <Mapping SourceColumn="l_date_taken" DataSetColumn="l_date_taken" />
+              <Mapping SourceColumn="AC_NO" DataSetColumn="AC_NO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ABMSDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="ABMSDataSet4" msprop:Generator_DataSetName="ABMSDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PendingLoans" msprop:Generator_RowEvHandlerName="PendingLoansRowChangeEventHandler" msprop:Generator_RowDeletedName="PendingLoansRowDeleted" msprop:Generator_RowDeletingName="PendingLoansRowDeleting" msprop:Generator_RowEvArgName="PendingLoansRowChangeEvent" msprop:Generator_TablePropName="PendingLoans" msprop:Generator_RowChangedName="PendingLoansRowChanged" msprop:Generator_RowChangingName="PendingLoansRowChanging" msprop:Generator_TableClassName="PendingLoansDataTable" msprop:Generator_RowClassName="PendingLoansRow" msprop:Generator_TableVarName="tablePendingLoans" msprop:Generator_UserTableName="PendingLoans">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="l_id" msprop:Generator_ColumnPropNameInRow="l_id" msprop:Generator_ColumnPropNameInTable="l_idColumn" msprop:Generator_ColumnVarNameInTable="columnl_id" msprop:Generator_UserColumnName="l_id" type="xs:int" />
+              <xs:element name="lt_name" msprop:Generator_ColumnPropNameInRow="lt_name" msprop:Generator_ColumnPropNameInTable="lt_nameColumn" msprop:Generator_ColumnVarNameInTable="columnlt_name" msprop:Generator_UserColumnName="lt_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lt_interest" msprop:Generator_ColumnPropNameInRow="lt_interest" msprop:Generator_ColumnPropNameInTable="lt_interestColumn" msprop:Generator_ColumnVarNameInTable="columnlt_interest" msprop:Generator_UserColumnName="lt_interest" type="xs:decimal" />
+              <xs:element name="lt_status" msprop:Generator_ColumnPropNameInRow="lt_status" msprop:Generator_ColumnPropNameInTable="lt_statusColumn" msprop:Generator_ColumnVarNameInTable="columnlt_status" msprop:Generator_UserColumnName="lt_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lt_duration" msprop:Generator_ColumnPropNameInRow="lt_duration" msprop:Generator_ColumnPropNameInTable="lt_durationColumn" msprop:Generator_ColumnVarNameInTable="columnlt_duration" msprop:Generator_UserColumnName="lt_duration" type="xs:unsignedByte" />
+              <xs:element name="total_bal" msprop:Generator_ColumnPropNameInRow="total_bal" msprop:Generator_ColumnPropNameInTable="total_balColumn" msprop:Generator_ColumnVarNameInTable="columntotal_bal" msprop:Generator_UserColumnName="total_bal" type="xs:decimal" />
+              <xs:element name="l_status" msprop:Generator_ColumnPropNameInRow="l_status" msprop:Generator_ColumnPropNameInTable="l_statusColumn" msprop:Generator_ColumnVarNameInTable="columnl_status" msprop:Generator_UserColumnName="l_status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="l_date_taken" msprop:Generator_ColumnPropNameInRow="l_date_taken" msprop:Generator_ColumnPropNameInTable="l_date_takenColumn" msprop:Generator_ColumnVarNameInTable="columnl_date_taken" msprop:Generator_UserColumnName="l_date_taken" type="xs:dateTime" />
+              <xs:element name="AC_NO" msprop:Generator_ColumnPropNameInRow="AC_NO" msprop:Generator_ColumnPropNameInTable="AC_NOColumn" msprop:Generator_ColumnVarNameInTable="columnAC_NO" msprop:Generator_UserColumnName="AC_NO" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PendingLoans" />
+      <xs:field xpath="mstns:l_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

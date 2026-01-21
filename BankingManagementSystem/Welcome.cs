@@ -25,5 +25,12 @@ namespace BankingManagementSystem
             this.Hide();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login l1 = new Login();
+            l1.Show();
+            this.Hide();
+        }
     }
 }

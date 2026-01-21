@@ -37,9 +37,9 @@
             this.aBMSCompanyServicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aBMSCompanyServices = new BankingManagementSystem.ABMSCompanyServices();
             this.back1 = new System.Windows.Forms.Button();
-            this.aBMSDataSet1 = new BankingManagementSystem.ABMSDataSet1();
+            //this.aBMSDataSet1 = new BankingManagementSystem.ABMSDataSet1();
             this.servicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.servicesTableAdapter = new BankingManagementSystem.ABMSDataSet1TableAdapters.ServicesTableAdapter();
+            //this.servicesTableAdapter = new BankingManagementSystem.ABMSDataSet1TableAdapters.ServicesTableAdapter();
             this.sidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.snameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.spriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSCompanyServicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSCompanyServices)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,17 +141,17 @@
             // 
             // aBMSDataSet1
             // 
-            this.aBMSDataSet1.DataSetName = "ABMSDataSet1";
-            this.aBMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.aBMSDataSet1.DataSetName = "ABMSDataSet1";
+            //this.aBMSDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // servicesBindingSource
             // 
             this.servicesBindingSource.DataMember = "Services";
-            this.servicesBindingSource.DataSource = this.aBMSDataSet1;
+            //this.servicesBindingSource.DataSource = this.aBMSDataSet1;
             // 
             // servicesTableAdapter
             // 
-            this.servicesTableAdapter.ClearBeforeFill = true;
+            //this.servicesTableAdapter.ClearBeforeFill = true;
             // 
             // sidDataGridViewTextBoxColumn
             // 
@@ -309,7 +309,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSCompanyServicesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aBMSCompanyServices)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.aBMSDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -323,9 +323,9 @@
         private System.Windows.Forms.Button back1;
         private System.Windows.Forms.BindingSource aBMSCompanyServicesBindingSource;
         private ABMSCompanyServices aBMSCompanyServices;
-        private ABMSDataSet1 aBMSDataSet1;
+        //private ABMSDataSet1 aBMSDataSet1;
         private System.Windows.Forms.BindingSource servicesBindingSource;
-        private ABMSDataSet1TableAdapters.ServicesTableAdapter servicesTableAdapter;
+        //private ABMSDataSet1TableAdapters.ServicesTableAdapter servicesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn sidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn snameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn spriceDataGridViewTextBoxColumn;

@@ -1,5 +1,4 @@
-﻿using BankingManagementSystem.Banker;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,20 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BankingManagementSystem
+namespace BankingManagementSystem.Banker
 {
-    public partial class BankerClients : Form
+    public partial class BankerCompany : Form
     {
-
         private string status;
-        public BankerClients(string AC_NO)
+        public BankerCompany(string AC_NO)
         {
             InitializeComponent();
             tboxName.Text = lblACNO.Text = lblBalance.Text = lblNum.Text = lblNID.Text
                 = lblTIN.Text = lblDOB.Text = tboxNominee.Text = tboxAddress.Text = "";
             SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-CQ6UGDS\SQLEXPRESS01;Initial Catalog=ABMS;Integrated Security=True;");
             conn.Open();
-            string query = "SELECT AC_NO, NAME, BALANCE, NUMBER FROM AllAccountDetails WHERE AC_NO LIKE '1%'";
+            string query = "SELECT AC_NO, NAME, BALANCE, NUMBER FROM AllAccountDetails WHERE AC_NO LIKE '3%'";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataAdapter adp = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
@@ -33,23 +31,6 @@ namespace BankingManagementSystem
             dataGridView1.AutoGenerateColumns = true;
             conn.Close();
             bankerSideBar1.AC_NO = AC_NO;
-        }
-
-        private void BankerClients_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'aBMSDataSet2.AllAccountDetails' table. You can move, or remove it, as needed.
-            //this.allAccountDetailsTableAdapter.Fill(this.aBMSDataSet2.AllAccountDetails);
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -73,12 +54,13 @@ namespace BankingManagementSystem
                 tboxNominee.Text = $"{reader["NOMINEE"]}";
                 tboxAddress.Text = $"{reader["ADDRESS"]}";
                 status = $"{reader["AC_STATUS"]}";
+
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonStuff()
         {
-            if(lblACNO.Text == "")
+            if (lblACNO.Text == "")
             {
                 MessageBox.Show("Please select a client first.");
                 return;
@@ -89,12 +71,17 @@ namespace BankingManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(lblACNO.Text == "")
+
+        }
+
+        private void markBtnStuff()
+        {
+            if (lblACNO.Text == "")
             {
-                MessageBox.Show("Please select a client first.");
+                MessageBox.Show("Please select a company first.");
                 return;
             }
-            if(status == "Marked")
+            if (status == "Marked")
             {
                 MessageBox.Show("This account is already marked for review.");
                 return;
@@ -105,17 +92,21 @@ namespace BankingManagementSystem
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             MessageBox.Show("Account marked for review.");
-
         }
 
-        private void lblTIN_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
+            buttonStuff();
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            markBtnStuff();
         }
     }
 }

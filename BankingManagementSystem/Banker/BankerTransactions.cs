@@ -14,9 +14,12 @@ namespace BankingManagementSystem.Banker
 {
     public partial class BankerTransactions : Form
     {
-        public BankerTransactions()
+        private string AC_NO;
+        public BankerTransactions(string AC_NO)
         {
             InitializeComponent();
+            this.AC_NO = AC_NO;
+            bankerSideBar1.AC_NO = AC_NO;
         }
 
         private void BankerTransactions_Load(object sender, EventArgs e)
